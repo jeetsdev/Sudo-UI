@@ -1,0 +1,185 @@
+/*! Importing area  */
+
+@import url('https://fonts.googleapis.com/css2?family=Mogra&family=Roboto&display=swap');
+
+/*! Reset CSS */
+
+*,
+*::after,
+*::before {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+:root {
+    --color-pri: #8b5cf6;
+    --color-sec: #0e0822;
+    --text-pri: #9a86cb;
+    --bg-color-pri: #f3f4f6;
+    --bg-color-sec: #d1d5db;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color-pri);
+    color: var(--color-sec);
+    font-family: 'Roboto',
+        sans-serif;
+    ;
+}
+
+/*! Headline style here  */
+
+
+.headline-1 {
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+.headline-2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+.headline-3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+/*! Text typography style here */
+
+.text-bigger {
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+.text-big {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+.text-mid {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.text-small {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.text-smaller {
+    font-size: .5rem;
+    line-height: 1rem;
+}
+
+span {
+    color: var(--text-pri);
+    font-weight: 600;
+}
+
+/*! BOrder radius styling here  */
+
+.bor-full {
+    border-radius: 50%;
+}
+
+.bor-small {
+    border-radius: 5px;
+}
+
+.bor-mid {
+    border-radius: 10px;
+}
+
+.bor-lar {
+    border-radius: 15px;
+}
+
+/*! Buttons style here  */
+
+.button {
+    cursor: pointer;
+    display: inline-block;
+    min-width: 8.5rem;
+    outline: none;
+    padding: .8rem .5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.btn-primary {
+    background-color: var(--color-pri);
+    border: 1px solid var(--color-pri);
+    color: var(--bg-color-pri);
+}
+
+.btn-primary:hover {
+    background-color: var(--text-pri);
+    color: var(--color-sec);
+
+}
+
+.btn-sec {
+    border: 1px solid var(--color-pri);
+    background-color: var(--bg-color-pri);
+    color: var(--color-pri);
+}
+
+.btn-sec:hover {
+   background-color: var(--text-pri);
+   border-color: var(--text-pri);
+   color: var(--color-sec);
+}
+
+/* ! Achor tag style here */
+
+.links {
+    color: var(--color-sec);
+    text-decoration: none;
+    transition: all .3s linear;
+}
+
+.link-primary {
+    color: var(--color-sec);
+}
+
+
+.links:hover {
+    color: var(--color-pri);
+}
+
+
+
+/*! List style here  */
+
+ul {
+    list-style: none;
+}
+
+
+/*! Images style here  */
+
+.images {
+    block-size: auto; 
+    max-inline-size: 100%;
+}
+
+/*! Display styles here */
+
+.disp-none{
+    display: none;
+}
+
+.center-flex {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
