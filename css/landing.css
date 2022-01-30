@@ -1,0 +1,148 @@
+/*! Main Container section style here */
+
+body {
+    width: 100%;
+}
+
+.container-main {
+    flex-direction: column;
+}
+
+/*! Landing section style here  */
+
+.container-main .landing-sec {
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+/** Navbar style here */
+
+.landing-sec nav {
+    height: 10vh;
+    width: 100%;
+}
+
+.landing-sec nav .nav-left {
+    margin-right: auto;
+    margin-left: 2rem;
+}
+
+nav .nav-left a {
+    color: var(--color-pri);
+    font-family: 'Mogra', cursive;
+}
+
+nav .nav-right a {
+    margin: 0 1rem;
+}
+
+
+/**  Main landing style here*/
+
+.landing-sec .main-landing {
+    height: 90vh;
+}
+
+.main-landing>* {
+    margin: 1rem;
+}
+
+.main-landing .main-lan-left {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.main-lan-left>* {
+    margin: 1rem;
+}
+
+.lan-btns>* {
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+.main-lan-right img {
+    background-color: var(--text-pri);
+    border-radius: 50px 80px 80px 60px;
+
+}
+
+
+
+/* * Installation section style here */
+
+.install-sec {
+    width: 100%;
+}
+
+.install-sec>* {
+    margin: 1rem;
+}
+
+
+.install-sec .ins-sec-left>* {
+    margin: 1rem;
+}
+
+.ins-sec-left .inst-sub-heading>* {
+    margin: 1rem 0;
+}
+
+
+.ins-sec-right{
+    width: 100%;
+}
+
+.iframes {
+    background-color: var(--text-pri);
+    border-radius: 50px 80px 80px 60px;
+    border: transparent;
+    height: 220px;
+    width: 80%;
+}
+
+
+/* ! Media queries here */
+
+
+@media screen and (max-width:876px) {
+    html {
+        font-size: 14px
+    }
+    
+    
+    .install-sec {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:700px) {
+    html {
+        font-size: 12px;
+    }
+    
+    .install-sec {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:630px) {
+    .main-landing {
+        flex-direction: column;
+    }
+    
+    .main-lan-right {
+        display: none;
+    }
+    
+    .iframes {
+        background-color: var(--bg-color-pri);
+        border-radius:0px;
+        margin-bottom:1rem ;
+        width: 90%;
+    }
+
+}
