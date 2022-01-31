@@ -10,8 +10,7 @@ flex-direction: column;
 }
 
 .container-docs .navbar{
-    border-bottom: 2px solid var(--color-pri);
-
+    box-shadow: 0px 0px 5px 0px var(--color-pri);
 }
 
 
@@ -24,7 +23,7 @@ flex-direction: column;
 
 
 .sidebar{
-    border-right: 2px solid var(--color-pri);
+    box-shadow: 0px 5px 10px 0px var(--color-pri);
     height: 100vh;
     left: 0;
     overflow-y: auto;
