@@ -10,13 +10,13 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    /* outline: 1px solid red; */
 }
 
 :root {
     --color-pri: #8b5cf6;
     --color-sec: #0e0822;
     --text-pri: #9a86cb;
+    --text-sec:#272d37;
     --bg-color-pri: #f3f4f6;
     --bg-color-sec: #d1d5db;
 }
@@ -84,6 +84,12 @@ span {
     font-weight: 600;
 }
 
+.text-sec{
+    color: var(--text-sec);
+    font-weight: 500;
+}
+
+
 /*! BOrder radius styling here  */
 
 .bor-full {
@@ -147,10 +153,6 @@ span {
     transition: all .3s linear;
 }
 
-.link-primary {
-    color: var(--color-sec);
-}
-
 
 .links:hover {
     color: var(--color-pri);
@@ -182,4 +184,8 @@ ul {
     align-items: center;
     display: flex;
     justify-content: center;
+}
+
+.flex-d-col{
+    flex-direction: column;
 }
