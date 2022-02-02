@@ -5,7 +5,7 @@ flex-direction: column;
 }
 
 .container-docs .navbar{
-    box-shadow: 0 0 10px var(--bg-color-sec);
+    box-shadow: 0 0 10px var(--color-off-white);
 }
 
 
@@ -20,7 +20,7 @@ flex-direction: column;
 /** Sidebar style here */
 
 .sidebar{
-    box-shadow: 0 5px 10px var(--bg-color-sec);
+    box-shadow: 0 5px 10px var(--color-off-white);
     height: 100vh;
     left: 0;
     overflow-y: auto;
@@ -61,6 +61,12 @@ flex-direction: column;
 .comp-details>*{
     margin: 1rem 0;
 }
+
+.comp-examples {
+    border: 2px solid var(--color-off-white);
+    border-radius: 5px;
+}
+
 
 .iframe-sec{
     width: 100%;

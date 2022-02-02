@@ -17,8 +17,8 @@
     --color-sec: #0e0822;
     --text-pri: #9a86cb;
     --text-sec:#272d37;
-    --bg-color-pri: #f3f4f6;
-    --bg-color-sec: #d1d5db;
+    --color-white: #f3f4f6;
+    --color-off-white: #d1d5db;
 }
 
 html{
@@ -26,7 +26,7 @@ html{
 }
 
 body {
-    background-color: var(--bg-color-pri);
+    background-color: var(--color-white);
     color: var(--color-sec);
     font-family: 'Roboto',
         sans-serif;
@@ -128,7 +128,7 @@ span {
 .btn-primary {
     background-color: var(--color-pri);
     border: 1px solid var(--color-pri);
-    color: var(--bg-color-pri);
+    color: var(--color-white);
 }
 
 .btn-primary:hover {
@@ -139,7 +139,7 @@ span {
 
 .btn-sec {
     border: 1px solid var(--color-pri);
-    background-color: var(--bg-color-pri);
+    background-color: var(--color-white);
     color: var(--color-pri);
 }
 
