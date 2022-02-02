@@ -1,0 +1,47 @@
+/* ! Spacing styles here */
+
+/* * Margin styles here */
+
+.marg-8p {
+    margin: 8px;
+}
+
+.marg-1r {
+    margin: 1rem;
+}
+
+.marg-2r {
+    margin: 2rem;
+}
+
+/* * Padding styles here */
+
+.padd-8p {
+    padding: 8px;
+}
+
+.padd-1r {
+    padding: 1rem;
+}
+
+.padd-2r {
+    padding: 2rem;
+}
+
+/*! BOrder radius styling here  */
+
+.bor-full {
+    border-radius: 50%;
+}
+
+.bor-small {
+    border-radius: 5px;
+}
+
+.bor-mid {
+    border-radius: 10px;
+}
+
+.bor-lar {
+    border-radius: 15px;
+}

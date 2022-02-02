@@ -10,23 +10,28 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 :root {
     --color-pri: #8b5cf6;
     --color-sec: #0e0822;
     --text-pri: #9a86cb;
-    --text-sec:#272d37;
-    --bg-color-pri: #f3f4f6;
-    --bg-color-sec: #d1d5db;
+    --text-sec: #272d37;
+    --color-white: #f3f4f6;
+    --color-off-white: #d1d5db;
+    --color-green: hsl(120, 100%, 25%);
+    --color-off-green: hsl(151, 41%, 79%);
+    --color-yellow: hsl(35, 100%, 50%);
+    --color-yellow: hsl(60, 100%, 25%);
+    --color-off-yellow: hsl(60, 41%, 79%);
+    --color-red: hsl(0, 100%, 25%);
+    --color-off-red: hsl(0, 41%, 79%);
 }
 
-html{
-    scroll-behavior: smooth;
-}
 
 body {
-    background-color: var(--bg-color-pri);
+    background-color: var(--color-white);
     color: var(--color-sec);
     font-family: 'Roboto',
         sans-serif;
@@ -84,32 +89,13 @@ span {
     font-weight: 600;
 }
 
-.text-head{
+.text-head {
     color: var(--color-pri);
 }
 
-.text-sec{
+.text-sec {
     color: var(--text-sec);
     font-weight: 500;
-}
-
-
-/*! BOrder radius styling here  */
-
-.bor-full {
-    border-radius: 50%;
-}
-
-.bor-small {
-    border-radius: 5px;
-}
-
-.bor-mid {
-    border-radius: 10px;
-}
-
-.bor-lar {
-    border-radius: 15px;
 }
 
 /*! Buttons style here  */
@@ -128,7 +114,7 @@ span {
 .btn-primary {
     background-color: var(--color-pri);
     border: 1px solid var(--color-pri);
-    color: var(--bg-color-pri);
+    color: var(--color-white);
 }
 
 .btn-primary:hover {
@@ -139,14 +125,14 @@ span {
 
 .btn-sec {
     border: 1px solid var(--color-pri);
-    background-color: var(--bg-color-pri);
+    background-color: var(--color-white);
     color: var(--color-pri);
 }
 
 .btn-sec:hover {
-   background-color: var(--text-pri);
-   border-color: var(--text-pri);
-   color: var(--color-sec);
+    background-color: var(--text-pri);
+    border-color: var(--text-pri);
+    color: var(--color-sec);
 }
 
 /* ! Achor tag style here */
@@ -163,36 +149,6 @@ span {
 }
 
 
-/*! Spacing styles here  */
-
-/* * Margin styles here */
-
-.mar-8p{
-    margin: 8px;
-}
-.marg-1r{
-    margin: 1rem;
-}
-
-.marg-2r{
-    margin: 2rem;
-}
-
-/* * Padding styles here */
-
-.padd-8p{
-    padding: 8px;
-}
-
-.padd-1r{
-    padding: 1rem;
-}
-
-.padd-2r{
-    padding: 2rem;
-}
-
-
 /*! List style here  */
 
 ul {
@@ -203,13 +159,13 @@ ul {
 /*! Images style here  */
 
 .images {
-    block-size: auto; 
+    block-size: auto;
     max-inline-size: 100%;
 }
 
 /*! Display styles here */
 
-.disp-none{
+.disp-none {
     display: none;
 }
 
@@ -219,6 +175,6 @@ ul {
     justify-content: center;
 }
 
-.flex-d-col{
+.flex-d-col {
     flex-direction: column;
 }

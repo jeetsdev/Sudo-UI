@@ -1,12 +1,6 @@
 @import url(components.css);
 
 
-.comp-examples{
-    border: 2px solid var(--bg-color-sec) ;
-    border-radius: 5px;
-}
-
-
 .avatar-big{
     width: 6rem;
     height: 6rem;
@@ -22,6 +16,6 @@
 
 .avatar-txt{
     color: var(--color-sec);
-    background-color: var(--bg-color-sec);
+    background-color: var(--color-off-white);
     font-size: 100%;
 }
