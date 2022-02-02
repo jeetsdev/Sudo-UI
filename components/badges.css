@@ -16,22 +16,22 @@
 .badge-big {
     width: 1.5em;
     height: 1.5em;
-    bottom: 1.5rem;
-    right: 1.25em;
+    bottom: .5rem;
+    left: 4.25em;
 }
 
 .badge-mid {
     width: 1em;
     height: 1em;
-    bottom: 1.5rem;
-    right: 1em;
+    bottom: .5rem;
+    left: 3em;
 }
 
 .badge-sml {
     width: .75em;
     height: .75em;
-    bottom: 1.25em;
-    right: .8em;
+    bottom: .2em;
+    left: 1.3em;
 }
 
 /* * Badge type variants */
@@ -51,15 +51,17 @@
 
 /*! Text badges styles */
 
-.badge-container > .fas{
+.badge-container>.fas {
     font-size: 2em;
 }
 
-.badge-text{
-   position: absolute;
-   top: 0.3em;
-   right: 0.2em;
-   background-color: var(--color-red);
-   color: var(--color-white);
-   font-weight: 600;
+.badge-text {
+    width: 1.5em;
+    height: 1.5em;
+    position: absolute;
+    bottom:1em;
+    left: 1.2em;
+    background-color: var(--color-red);
+    color: var(--color-white);
+    font-weight: 600;
 }
