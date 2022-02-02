@@ -1,0 +1,27 @@
+@import url(components.css);
+
+
+.comp-examples{
+    border: 2px solid var(--bg-color-sec) ;
+    border-radius: 5px;
+}
+
+
+.avatar-big{
+    width: 6rem;
+    height: 6rem;
+}
+.avatar-mid{
+    width: 4rem;
+    height: 4rem;
+}
+.avatar-sml{
+    width: 2rem;
+    height: 2rem;
+}
+
+.avatar-txt{
+    color: var(--color-sec);
+    background-color: var(--bg-color-sec);
+    font-size: 100%;
+}

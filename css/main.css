@@ -65,7 +65,7 @@ body {
 }
 
 .text-mid {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 2rem;
 }
 
@@ -82,6 +82,10 @@ body {
 span {
     color: var(--text-pri);
     font-weight: 600;
+}
+
+.text-head{
+    color: var(--color-pri);
 }
 
 .text-sec{
@@ -158,6 +162,35 @@ span {
     color: var(--color-pri);
 }
 
+
+/*! Spacing styles here  */
+
+/* * Margin styles here */
+
+.mar-8p{
+    margin: 8px;
+}
+.marg-1r{
+    margin: 1rem;
+}
+
+.marg-2r{
+    margin: 2rem;
+}
+
+/* * Padding styles here */
+
+.padd-8p{
+    padding: 8px;
+}
+
+.padd-1r{
+    padding: 1rem;
+}
+
+.padd-2r{
+    padding: 2rem;
+}
 
 
 /*! List style here  */
