@@ -1,0 +1,65 @@
+@import url(components.css);
+
+.badge-container {
+    position: relative;
+}
+
+/* ! Avatar badge style */
+
+.badge-avatar {
+    position: absolute;
+    border: 2px solid var(--color-white);
+}
+
+/* * Badge size variants */
+
+.badge-big {
+    width: 1.5em;
+    height: 1.5em;
+    bottom: 1.5rem;
+    right: 1.25em;
+}
+
+.badge-mid {
+    width: 1em;
+    height: 1em;
+    bottom: 1.5rem;
+    right: 1em;
+}
+
+.badge-sml {
+    width: .75em;
+    height: .75em;
+    bottom: 1.25em;
+    right: .8em;
+}
+
+/* * Badge type variants */
+
+.badge-online {
+    background-color: var(--color-green);
+}
+
+.badge-offline {
+    background-color: var(--color-grey);
+}
+
+.badge-dnd {
+    background-color: var(--color-red);
+}
+
+
+/*! Text badges styles */
+
+.badge-container > .fas{
+    font-size: 2em;
+}
+
+.badge-text{
+   position: absolute;
+   top: 0.3em;
+   right: 0.2em;
+   background-color: var(--color-red);
+   color: var(--color-white);
+   font-weight: 600;
+}
