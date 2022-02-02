@@ -1,24 +1,25 @@
 @import url(components.css);
 
-.alerts{
+.alerts {
     width: 80%;
 }
 
-.alert-pri{
+.alert-pri {
     background-color: var(--text-pri);
     color: var(--color-white);
 }
 
-.alert-suc{
+.alert-suc {
     background-color: var(--color-off-green);
     color: var(--color-green);
 }
-.alert-war{
+
+.alert-war {
     background-color: var(--color-off-yellow);
     color: var(--color-yellow);
 }
-.alert-dan{
+
+.alert-dan {
     background-color: var(--color-off-red);
     color: var(--color-red);
 }
-
