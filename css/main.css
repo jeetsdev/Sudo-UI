@@ -19,6 +19,13 @@
     --text-sec:#272d37;
     --color-white: #f3f4f6;
     --color-off-white: #d1d5db;
+    --color-green:hsl(120, 100%, 25%);
+    --color-off-green:hsl(151, 41%, 79%);
+    --color-yellow:hsl(35, 100%, 50%);
+    --color-yellow:hsl(60, 100%, 25%);
+    --color-off-yellow:hsl(60, 41%, 79%);
+    --color-red:hsl(0, 100%, 25%);
+    --color-off-red:hsl(0, 41%, 79%);
 }
 
 html{
@@ -167,7 +174,7 @@ span {
 
 /* * Margin styles here */
 
-.mar-8p{
+.marg-8p{
     margin: 8px;
 }
 .marg-1r{
