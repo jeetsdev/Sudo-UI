@@ -5,7 +5,7 @@ flex-direction: column;
 }
 
 .container-docs .navbar{
-    box-shadow: 0px 0px 10px 0px var(--bg-color-sec);
+    box-shadow: 0 0 10px var(--bg-color-sec);
 }
 
 
@@ -20,7 +20,7 @@ flex-direction: column;
 /** Sidebar style here */
 
 .sidebar{
-    box-shadow: 0px 5px 10px 0px var(--bg-color-sec);
+    box-shadow: 0 5px 10px var(--bg-color-sec);
     height: 100vh;
     left: 0;
     overflow-y: auto;
