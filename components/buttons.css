@@ -1,0 +1,105 @@
+@import url(components.css);
+
+.btns {
+    padding: .8rem 1.2rem;
+    border: none;
+    color: var(--color-white);
+    font-weight: 550;
+    transition: all .3s ease;
+    text-decoration: none;
+}
+
+/** Solid buttons here */
+
+.btn-primary {
+    background-color: var(--color-pri);
+}
+
+.btn-secondary {
+    background-color: var(--color-grey);
+}
+
+.btn-icon {
+    background-color: var(--color-pri);
+}
+
+.btn-icon>* {
+    margin: 0 2px;
+}
+
+.btn-float {
+    width: 2.8rem;
+    height: 2.8rem;
+    background-color: var(--color-pri);
+    box-shadow: 0px 0px 15px 4px var(--color-off-white);
+}
+
+.btn-link {
+    text-decoration: underline;
+    color: var(--color-pri);
+    font-weight: 600;
+}
+
+
+/** Ouline style here  */
+
+.btn-primary-outline,
+.btn-icon-outline {
+    color: var(--color-pri);
+    outline: 2px solid var(--color-pri);
+}
+
+.btn-secondary-outline {
+    color: var(--color-grey);
+    outline: 2px solid var(--color-grey);
+}
+
+.btn-float-outline {
+    width: 2.8rem;
+    height: 2.8rem;
+    color: var(--color-pri);
+    outline: 2px solid var(--color-pri);
+    box-shadow: 0px 0px 15px 4px var(--color-off-white);
+}
+
+/*! hover states here  */
+
+.btn-primary:hover {
+    background-color: var(--text-pri);
+}
+
+
+.btn-secondary:hover {
+    background-color: var(--color-off-white);
+}
+
+
+
+.btn-icon:hover {
+    background-color: var(--text-pri);
+}
+
+
+
+.btn-float:hover {
+    background-color: var(--text-pri);
+}
+
+
+.btn-link:hover {
+    text-decoration: none;
+    color: var(--text-pri);
+}
+
+
+.btn-primary-outline:hover,
+.btn-icon-outline:hover,
+.btn-float-outline:hover {
+    color: var(--color-white);
+    background-color: var(--color-pri);
+}
+
+.btn-secondary-outline:hover {
+    color: var(--color-white);
+    background-color: var(--color-grey);
+}
