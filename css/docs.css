@@ -27,7 +27,7 @@ flex-direction: column;
     padding: 1rem;
     position: sticky;
     top: 0;
-    flex-basis: 300px;
+    flex-basis: 450px;
     /* transform: translateX(-100%); */
 }
 
