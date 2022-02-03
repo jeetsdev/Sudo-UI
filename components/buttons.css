@@ -1,6 +1,7 @@
 @import url(components.css);
 
 .btns {
+    cursor: pointer;
     padding: .8rem 1.2rem;
     border: none;
     color: var(--color-white);
