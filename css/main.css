@@ -162,6 +162,8 @@ ul {
 .images {
     block-size: auto;
     max-inline-size: 100%;
+    width: 100%;
+    height: auto;
 }
 
 /*! Display styles here */
