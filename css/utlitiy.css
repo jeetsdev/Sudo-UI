@@ -6,6 +6,22 @@
     margin: 8px;
 }
 
+.marg-ud-4p {
+    margin: 4px 0;
+}
+
+.marg-lr-4p {
+    margin: 0 4px;
+}
+
+.marg-ud-8p {
+    margin: 8px 0;
+}
+
+.marg-lr-8p {
+    margin: 0 8px;
+}
+
 .marg-1r {
     margin: 1rem;
 }
@@ -18,6 +34,22 @@
 
 .padd-8p {
     padding: 8px;
+}
+
+.padd-ud-4p {
+    padding: 4px 0;
+}
+
+.padd-lr-4p {
+    padding: 0 4px;
+}
+
+.padd-ud-8p {
+    padding: 8px 0;
+}
+
+.padd-lr-8p {
+    padding: 0 8px;
 }
 
 .padd-1r {
@@ -46,6 +78,6 @@
     border-radius: 15px;
 }
 
-.bor-4p{
+.bor-4p {
     border-radius: 4px;
 }

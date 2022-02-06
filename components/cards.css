@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+.card {
+    font-family: 'Poppins',
+        sans-serif;
+    display: grid;
+    background-color: var(--color-off-white);
+    transition: transform .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+/*! Vertical card style here  */
+
+.card-vert {
+    color: var(--color-pure-black);
+    max-width: 20rem;
+    max-height: 30.25rem;
+    grid-template-rows: 3fr 1fr;
+}
+
+
+/** Card upper section */
+
+.card-upper-icon {
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.card-upper-icon i {
+    cursor: pointer;
+    font-size: 1.2em;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--color-pure-white);
+    padding: 1rem;
+}
+
+.fa-heart.fas {
+    color: var(--color-pure-red);
+}
+
+.card-upper-image img {
+    height: 17rem;
+    width: 16rem;
+}
+
+/* * Card lower section */
+
+.card-lower-sec {
+    line-height: 1.5rem;
+    background-color: var(--color-pure-white);
+}
+
+.card-lower-sec .lower-disc {
+    margin: auto;
+    justify-content: flex-end;
+}
+
+.card-lower-sec .lower-price,
+.card-lower-sec .lower-discount {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--color-pure-black);
+}
+
+
+/* Previous price style */
+
+.card-lower-sec .lower-price-prev {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--color-grey);
+    text-decoration: line-through;
+}
+
+/* Discount style here */
+
+.card-lower-sec .lower-discount {
+    color: var(--color-grey);
+}
+
+/* Lower section buttons style */
+
+.card-lower-btns {
+    width: 100%;
+}
+
+.card-lower-btns button {
+    /* Buttons font don't get inherits */
+    font-family: inherit;
+    width: 100%;
+}
+
+
+/*! Badge card style here */
+
+.card-badge {
+    position: relative;
+}
+
+.card-badge-icon {
+    top: .5rem;
+    left: .5rem;
+    padding: 4px;
+    color: var(--color-pure-white);
+    background-color: var(--color-pure-red);
+    position: absolute;
+}
+
+
+/*! Card horizontal style here */
+
+.card-horz {
+    color: var(--color-pure-black);
+    grid-template-columns: 1.5fr 2.5fr;
+}
+
+.card-horz .card-lower-sec {
+    justify-content: space-around;
+}
+
+.card-horz .lower-disc {
+    width: 70%;
+    margin: 0;
+}
+
+.card-horz .lower-title {
+    font-size: 1.5rem;
+}
+
+.card-horz .lower-price-sec {
+    justify-content: flex-start;
+}
+
+.card-horz .lower-price {
+    font-size: 2rem;
+}
+
+.card-horz .card-lower-btns {
+    width: 70%;
+    justify-content: space-around;
+}
+
+/*! Shadow card style here  */
+
+.card-shadow {
+    box-shadow: -1px 0px 10px var(--text-sec);
+}
+
+
+/*! Text only card here  */
+
+.card-text-only {
+    grid-template-rows: 1fr 1.5fr;
+    max-width: 22rem;
+}
+
+.card-dismiss {
+    position: relative;
+}
+
+.dismiss-btn {
+    cursor: pointer;
+    font-size: 1.2rem;
+    right: .5rem;
+    top: .5rem;
+    position: absolute;
+    transition: all .3s linear;
+}
+
+.dismiss-btn:hover {
+    transform: scale(1.1);
+    transition: all .3s linear;
+}
+
+/*! Text overlay card here  */
+
+.card-txt-over{
+    position: relative;
+}
+
+.text-overlay-sec {
+    color: var(--color-pure-white);
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    transition: all .3s ease;
+    transform-origin: left;
+}
+
+.text-overlay-sec.new-arr {
+    bottom: 40%;
+    background-color: var(--color-trans-red);
+}
+
+.text-overlay-sec.oos {
+    font-weight: 900;
+    color: var(--color-white);
+    background-color: var(--color-trans-grey);
+    bottom: 0;
+    top: 0;
+}
+
+.text-overlay-sec.oos p{
+    background-color: var(--color-trans-red);
+}
