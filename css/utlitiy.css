@@ -36,6 +36,22 @@
     padding: 8px;
 }
 
+.padd-ud-4p {
+    padding: 4px 0;
+}
+
+.padd-lr-4p {
+    padding: 0 4px;
+}
+
+.padd-ud-8p {
+    padding: 8px 0;
+}
+
+.padd-lr-8p {
+    padding: 0 8px;
+}
+
 .padd-1r {
     padding: 1rem;
 }
