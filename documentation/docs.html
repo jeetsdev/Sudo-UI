@@ -37,6 +37,7 @@
                     <a href="#cards-sec" class="links link-primary">Crads</a>
                     <a href="#images-sec" class="links link-primary">Images</a>
                     <a href="#inputs-sec" class="links link-primary">Inputs</a>
+                    <a href="#text-utilities-sec" class="links link-primary">Text-Utilities</a>
                 </div>
             </aside>
             <div class="docs-sec">
@@ -621,26 +622,85 @@
 
                             <!-- Validation form here -->
                             <form action="" onsubmit="return false" class="input-validation center-flex flex-wrap">
-                                    <input type="text" placeholder="Enter username here" class="padd-1r marg-1r"
-                                        required>
-                                    <input type="email" placeholder="Enter email here" class="padd-1r marg-1r" required>
-                                    <input type="password" placeholder="Enter password here" class="padd-1r marg-1r"
-                                        required>
-                                    <button type="submit" class="btns btn-secondary">Sign Up</button>
+                                <input type="text" placeholder="Enter username here" class="padd-1r marg-1r" required>
+                                <input type="email" placeholder="Enter email here" class="padd-1r marg-1r" required>
+                                <input type="password" placeholder="Enter password here" class="padd-1r marg-1r"
+                                    required>
+                                <button type="submit" class="btns btn-secondary">Sign Up</button>
                             </form>
                         </div>
                     </div>
                     <div class="iframe-sec center-flex">
-                      <iframe
-                          src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=blackboard&wt=none&l=text%2Fx-c%2B%2Bsrc&width=718&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=21px&ph=18px&ln=false&fl=1&fm=Hack&fs=13px&lh=124%25&si=false&es=2x&wm=false&code=%253C%21--%2520Validation%2520form%2520here%2520--%253E%250A%2520%2520%250A%253Cform%2520action%253D%2522%2522%2520onsubmit%253D%2522return%2520false%2522%2520class%253D%2522input-validation%2520center-flex%2520flex-wrap%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522inputs-box%2520center-flex%2520flex-wrap%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520placeholder%253D%2522Enter%2520username%2520here%2522%2520class%253D%2522padd-1r%2520marg-1r%2522%2520required%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522email%2522%2520placeholder%253D%2522Enter%2520email%2520here%2522%2520class%253D%2522padd-1r%2520marg-1r%2522%2520required%253E%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522password%2522%2520placeholder%253D%2522Enter%2520password%2520here%2522%2520class%253D%2522padd-1r%2520marg-1r%2522%2520required%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522btns-box%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522submit%2522%2520class%253D%2522btns%2520btn-secondary%2522%253ESign%2520Up%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fform%253E"
-                          style="width: 100%; height: 294px; border:0; transform: scale(1); overflow:hidden;"
-                          sandbox="allow-scripts allow-same-origin">
-                      </iframe>
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=blackboard&wt=none&l=text%2Fx-c%2B%2Bsrc&width=718&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=21px&ph=18px&ln=false&fl=1&fm=Hack&fs=13px&lh=124%25&si=false&es=2x&wm=false&code=%253C%21--%2520Validation%2520form%2520here%2520--%253E%250A%2520%2520%250A%253Cform%2520action%253D%2522%2522%2520onsubmit%253D%2522return%2520false%2522%2520class%253D%2522input-validation%2520center-flex%2520flex-wrap%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522inputs-box%2520center-flex%2520flex-wrap%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520placeholder%253D%2522Enter%2520username%2520here%2522%2520class%253D%2522padd-1r%2520marg-1r%2522%2520required%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522email%2522%2520placeholder%253D%2522Enter%2520email%2520here%2522%2520class%253D%2522padd-1r%2520marg-1r%2522%2520required%253E%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522password%2522%2520placeholder%253D%2522Enter%2520password%2520here%2522%2520class%253D%2522padd-1r%2520marg-1r%2522%2520required%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522btns-box%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522submit%2522%2520class%253D%2522btns%2520btn-secondary%2522%253ESign%2520Up%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fform%253E"
+                            style="width: 100%; height: 294px; border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
                     </div>
+                </section>
+                <section id="text-utilities-sec">
+                    <div class="comp-intro">
+                        <h1 class="headline-1 text-head">Text-Utilities</h1>
+                        <p class="headline-3">
+                            We have some pre defined text style classes to style your texts.
+                        </p>
+                    </div>
+                    <div class="comp-details">
+                        <h2 class="headline-2 text-sub-head">Examples of Heading texts</h2>
+                        <p class="text-mid">
+                            For headings you can use <span class="text-pri-color">h1, h2, h3, h4, h5, h6</span> classes.
+                        </p>
+                        <div class="comp-examples padd-1r">
+
+                            <!-- Headings here -->
+                            <p class="h1 marg-ud-8p">Heading H1</p>
+                            <p class="h2 marg-ud-8p">Heading H2</p>
+                            <p class="h3 marg-ud-8p">Heading H3</p>
+                            <p class="h4 marg-ud-8p">Heading H4</p>
+                            <p class="h5 marg-ud-8p">Heading H5</p>
+                            <p class="h6 marg-ud-8p">Heading H6</p>
+                        </div>
+                        <div class="iframe-sec center-flex">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=blackboard&wt=none&l=text%2Fx-c%2B%2Bsrc&width=718&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=21px&ph=18px&ln=false&fl=1&fm=Hack&fs=13px&lh=124%25&si=false&es=2x&wm=false&code=%2520%253C%21--%2520Headings%2520here%2520--%253E%250A%2520%2520%2520%250A%2520%2520%253Cp%2520class%253D%2522h1%2520marg-ud-8p%2522%253EHeading%2520H1%253C%252Fp%253E%2520%2520%2520%2520%2520%250A%2520%2520%253Cp%2520class%253D%2522h2%2520marg-ud-8p%2522%253EHeading%2520H2%253C%252Fp%253E%250A%2520%2520%253Cp%2520class%253D%2522h3%2520marg-ud-8p%2522%253EHeading%2520H3%253C%252Fp%253E%250A%2520%2520%253Cp%2520class%253D%2522h4%2520marg-ud-8p%2522%253EHeading%2520H4%253C%252Fp%253E%250A%2520%2520%253Cp%2520class%253D%2522h5%2520marg-ud-8p%2522%253EHeading%2520H5%253C%252Fp%253E%250A%2520%2520%253Cp%2520class%253D%2522h6%2520marg-ud-8p%2522%253EHeading%2520H6%253C%252Fp%253E%250A%2520%2520%250A%2520%2520%2520%2520"
+                                style="width: 100%; height: 262px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="comp-details">
+                        <h2 class="headline-2 text-sub-head">Examples of small and grey texts</h2>
+                        <p class="text-mid">
+                            For headings you can use <span class="text-pri-color">h1, h2, h3, h4, h5, h6</span>
+                            classes.
+                        </p>
+                        <div class="comp-examples padd-1r">
+
+                            <!-- Text styles here e-->
+                            <p class="marg-ud-8p">Normal text here</p>
+
+                            <!-- Small text here -->
+                            <p class="txt-sml marg-ud-8p">Small text here.</p>
+
+                            <!-- Grey text here -->
+                            <p class="txt-grey marg-ud-8p">Grey text here</p>
+
+                            <!-- Aligned text here -->
+                            <p class="txt-left marg-ud-8p">Left aligned text here</p>
+                            <p class="txt-center marg-ud-8p">Centered aligned text here</p>
+                            <p class="txt-right marg-ud-8p">Right aligned text here</p>
+                        </div>
+                        <div class="iframe-sec center-flex">
+                           <iframe
+                               src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=blackboard&wt=none&l=text%2Fx-c%2B%2Bsrc&width=718&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=21px&ph=18px&ln=false&fl=1&fm=Hack&fs=13px&lh=124%25&si=false&es=2x&wm=false&code=%2520%253C%21--%2520Text%2520styles%2520here%2520e--%253E%250A%2520%2520%2520%250A%2520%2520%253Cp%2520class%253D%2522marg-ud-8p%2522%253ENormal%2520text%2520here%253C%252Fp%253E%250A%250A%2520%2520%253C%21--%2520Small%2520text%2520here%2520--%253E%250A%2520%2520%253Cp%2520class%253D%2522txt-sml%2520marg-ud-8p%2522%253ESmall%2520text%2520here.%253C%252Fp%253E%250A%250A%2520%2520%253C%21--%2520Grey%2520text%2520here%2520--%253E%250A%2520%2520%253Cp%2520class%253D%2522txt-grey%2520marg-ud-8p%2522%253EGrey%2520text%2520here%253C%252Fp%253E%250A%250A%2520%2520%253C%21--%2520Aligned%2520text%2520here%2520--%253E%250A%2520%2520%253Cp%2520class%253D%2522txt-left%2520marg-ud-8p%2522%253ELeft%2520aligned%2520text%2520here%253C%252Fp%253E%250A%2520%2520%253Cp%2520class%253D%2522txt-center%2520marg-ud-8p%2522%253ECentered%2520aligned%2520text%2520here%253C%252Fp%253E%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%253Cp%2520class%253D%2522txt-right%2520marg-ud-8p%2522%253ERight%2520aligned%2520text%2520here%253C%252Fp%253E%250A%2520%2520"
+                               style="width: 100%; height: 343px; border:0; transform: scale(1); overflow:hidden;"
+                               sandbox="allow-scripts allow-same-origin">
+                           </iframe>
+                        </div>
+                    </div>
+                </section>
             </div>
-            </section>
-    </div>
-    </main>
+        </main>
     </div>
 </body>
 </html>
