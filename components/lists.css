@@ -1,0 +1,36 @@
+@import url(components.css);
+
+/*! Normal list style here */
+
+.list-num {
+    list-style-type: decimal;
+}
+
+.list-cir {
+    list-style: circle ;
+}
+
+.list-disc {
+    list-style: disc ;
+}
+
+.list-hand {
+    list-style: " 👉 ";
+
+}
+
+/*! stacked list style here  */
+
+.list-stacked>li {
+    border-radius: 4px;
+    margin: .5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--color-grey);
+    line-height: initial;
+}
+
+.list-stacked>li>* {
+    margin: .5rem;
+}

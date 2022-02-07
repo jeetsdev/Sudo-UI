@@ -38,6 +38,7 @@
                     <a href="#images-sec" class="links link-primary">Images</a>
                     <a href="#inputs-sec" class="links link-primary">Inputs</a>
                     <a href="#text-utilities-sec" class="links link-primary">Text-Utilities</a>
+                    <a href="#lists-sec" class="links link-primary">Lists</a>
                 </div>
             </aside>
             <div class="docs-sec">
@@ -691,11 +692,135 @@
                             <p class="txt-right marg-ud-8p">Right aligned text here</p>
                         </div>
                         <div class="iframe-sec center-flex">
-                           <iframe
-                               src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=blackboard&wt=none&l=text%2Fx-c%2B%2Bsrc&width=718&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=21px&ph=18px&ln=false&fl=1&fm=Hack&fs=13px&lh=124%25&si=false&es=2x&wm=false&code=%2520%253C%21--%2520Text%2520styles%2520here%2520e--%253E%250A%2520%2520%2520%250A%2520%2520%253Cp%2520class%253D%2522marg-ud-8p%2522%253ENormal%2520text%2520here%253C%252Fp%253E%250A%250A%2520%2520%253C%21--%2520Small%2520text%2520here%2520--%253E%250A%2520%2520%253Cp%2520class%253D%2522txt-sml%2520marg-ud-8p%2522%253ESmall%2520text%2520here.%253C%252Fp%253E%250A%250A%2520%2520%253C%21--%2520Grey%2520text%2520here%2520--%253E%250A%2520%2520%253Cp%2520class%253D%2522txt-grey%2520marg-ud-8p%2522%253EGrey%2520text%2520here%253C%252Fp%253E%250A%250A%2520%2520%253C%21--%2520Aligned%2520text%2520here%2520--%253E%250A%2520%2520%253Cp%2520class%253D%2522txt-left%2520marg-ud-8p%2522%253ELeft%2520aligned%2520text%2520here%253C%252Fp%253E%250A%2520%2520%253Cp%2520class%253D%2522txt-center%2520marg-ud-8p%2522%253ECentered%2520aligned%2520text%2520here%253C%252Fp%253E%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%253Cp%2520class%253D%2522txt-right%2520marg-ud-8p%2522%253ERight%2520aligned%2520text%2520here%253C%252Fp%253E%250A%2520%2520"
-                               style="width: 100%; height: 343px; border:0; transform: scale(1); overflow:hidden;"
-                               sandbox="allow-scripts allow-same-origin">
-                           </iframe>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=blackboard&wt=none&l=text%2Fx-c%2B%2Bsrc&width=718&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=21px&ph=18px&ln=false&fl=1&fm=Hack&fs=13px&lh=124%25&si=false&es=2x&wm=false&code=%2520%253C%21--%2520Text%2520styles%2520here%2520e--%253E%250A%2520%2520%2520%250A%2520%2520%253Cp%2520class%253D%2522marg-ud-8p%2522%253ENormal%2520text%2520here%253C%252Fp%253E%250A%250A%2520%2520%253C%21--%2520Small%2520text%2520here%2520--%253E%250A%2520%2520%253Cp%2520class%253D%2522txt-sml%2520marg-ud-8p%2522%253ESmall%2520text%2520here.%253C%252Fp%253E%250A%250A%2520%2520%253C%21--%2520Grey%2520text%2520here%2520--%253E%250A%2520%2520%253Cp%2520class%253D%2522txt-grey%2520marg-ud-8p%2522%253EGrey%2520text%2520here%253C%252Fp%253E%250A%250A%2520%2520%253C%21--%2520Aligned%2520text%2520here%2520--%253E%250A%2520%2520%253Cp%2520class%253D%2522txt-left%2520marg-ud-8p%2522%253ELeft%2520aligned%2520text%2520here%253C%252Fp%253E%250A%2520%2520%253Cp%2520class%253D%2522txt-center%2520marg-ud-8p%2522%253ECentered%2520aligned%2520text%2520here%253C%252Fp%253E%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%253Cp%2520class%253D%2522txt-right%2520marg-ud-8p%2522%253ERight%2520aligned%2520text%2520here%253C%252Fp%253E%250A%2520%2520"
+                                style="width: 100%; height: 343px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+                <section id="lists-sec">
+                    <div class="comp-intro">
+                        <h1 class="headline-1 text-head">Lists</h1>
+                        <p class="headline-3">
+                            List are used to show some information in a structured way.
+                        </p>
+                    </div>
+                    <div class="comp-details">
+                        <h2 class="headline-2 text-sub-head">Examples of Normal lists</h2>
+                        <p class="text-mid">
+                            We have for type of normal list. Use <span class="text-pri-color">list-num, list-cir,
+                                list-disc, list-hand</span> classes to use them.
+                            If you want to reverse the order just add <span class="text-pri-color">reverse</span>
+                            attribute too.
+                        </p>
+                        <div class="comp-examples center-flex flex-wrap padd-1r">
+
+                            <!-- Number list -->
+                            <ul class="list-num marg-2r text-mid">
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                                <li>Item 3</li>
+                                <li>Item 4</li>
+                                <li>Item 5</li>
+                            </ul>
+
+                            <!-- Circle list -->
+                            <ul class="list list-cir reverse marg-2r text-mid">
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                                <li>Item 3</li>
+                                <li>Item 4</li>
+                                <li>Item 5</li>
+                            </ul>
+
+                            <!-- Disc list -->
+                            <ul class="list-disc marg-2r text-mid">
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                                <li>Item 3</li>
+                                <li>Item 4</li>
+                                <li>Item 5</li>
+                            </ul>
+
+                            <!-- Pointing hand list -->
+                            <ul class="list-hand marg-2r text-mid">
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                                <li>Item 3</li>
+                                <li>Item 4</li>
+                                <li>Item 5</li>
+                            </ul>
+                        </div>
+                        <div class="iframe-sec center-flex">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=blackboard&wt=none&l=text%2Fx-c%2B%2Bsrc&width=718&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=21px&ph=18px&ln=false&fl=1&fm=Hack&fs=13px&lh=124%25&si=false&es=2x&wm=false&code=%253C%21--%2520Number%2520list%2520--%253E%250A%253Cul%2520class%253D%2522list-num%2520marg-1r%2520text-mid%2522%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25204%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25205%253C%252Fli%253E%250A%253C%252Ful%253E%250A%250A%253C%21--%2520Circle%2520list%2520--%253E%250A%253Cul%2520class%253D%2522list-cir%2520marg-1r%2520text-mid%2522%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Cli%253EItem%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25204%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25205%253C%252Fli%253E%250A%253C%252Ful%253E%250A%250A%253C%21--%2520Disc%2520list%2520--%253E%250A%253Cul%2520class%253D%2522list-disc%2520marg-1r%2520text-mid%2522%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25204%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25205%253C%252Fli%253E%250A%253C%252Ful%253E%250A%250A%253C%21--%2520Pointing%2520hand%2520list%2520--%253E%250A%253Cul%2520class%253D%2522list-hand%2520marg-1r%2520text-mid%2522%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25204%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EItem%25205%253C%252Fli%253E%250A%253C%252Ful%253E"
+                                style="width: 100%; height: 465px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="comp-details">
+                        <h2 class="headline-2 text-sub-head">Examples of Stacked lists</h2>
+                        <p class="text-mid">
+                            To make a list stacked list use <span class="text-pri-color">list-stacked</span> class, or
+                            copy the below code snippet as it is.
+                        </p>
+                        <div class="comp-examples center-flex flex-wrap padd-1r">
+
+                            <!-- Stacked list -->
+                            <ul class="list-stacked marg-1r text-mid">
+                                <li>
+
+                                    <!-- Avatar here -->
+                                    <div>
+                                        <p class="avatar-mid avatar-txt center-flex bor-full">SI</p>
+                                    </div>
+
+                                    <!-- discription here -->
+                                    <div>
+                                        <h3 class="headline-3">Stacked Item 1</h3>
+                                        <p class="text-small">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Tempora, voluptas!</p>
+                                    </div>
+                                </li>
+                                <li>
+
+                                    <!-- Avatar here -->
+                                    <div>
+                                        <p class="avatar-mid avatar-txt center-flex bor-full">SI</p>
+                                    </div>
+
+                                    <!-- discription here -->
+                                    <div>
+                                        <h3 class="headline-3">Stacked Item 2</h3>
+                                        <p class="text-small">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Tempora, voluptas!</p>
+                                    </div>
+                                </li>
+                                <li>
+
+                                    <!-- Avatar here -->
+                                    <div>
+                                        <p class="avatar-mid avatar-txt center-flex bor-full">SI</p>
+                                    </div>
+
+                                    <!-- discription here -->
+                                    <div>
+                                        <h3 class="headline-3">Stacked Item 3</h3>
+                                        <p class="text-small">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Tempora, voluptas!</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="iframe-sec center-flex">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=blackboard&wt=none&l=text%2Fx-c%2B%2Bsrc&width=718&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=21px&ph=18px&ln=false&fl=1&fm=Hack&fs=13px&lh=124%25&si=false&es=2x&wm=false&code=%2520%253C%21--%2520Stacked%2520list%2520--%253E%250A%2520%2520%2520%250A%2520%2520%253Cul%2520class%253D%2522list-stacked%2520marg-1r%2520text-mid%2522%253E%250A%2520%2520%2520%2520%253Cli%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Avatar%2520here%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522avatar-mid%2520avatar-txt%2520center-flex%2520bor-full%2522%253ESI%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520discription%2520here%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522headline-3%2522%253EStacked%2520Item%25201%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text-small%2522%253ELorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Tempora%252C%2520voluptas%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522avatar-mid%2520avatar-txt%2520center-flex%2520bor-full%2522%253ESI%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522headline-3%2522%253EStacked%2520Item%25202%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text-small%2522%253ELorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Tempora%252C%2520voluptas%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522avatar-mid%2520avatar-txt%2520center-flex%2520bor-full%2522%253ESI%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522headline-3%2522%253EStacked%2520Item%25203%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text-small%2522%253ELorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Tempora%252C%2520voluptas%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%253C%252Ful%253E"
+                                style="width: 100%; height: 513px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
                         </div>
                     </div>
                 </section>
