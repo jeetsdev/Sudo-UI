@@ -1,0 +1,34 @@
+@import url(components.css);
+
+/*! Textarea styles here */
+
+.input-textarea {
+    padding: 1rem;
+    outline: none;
+    border: 2px solid var(--color-grey);
+}
+
+.input-textarea.no-resize {
+    resize: none;
+}
+
+/*! input validation style here */
+
+.input-validation input {
+    outline: none;
+    border: 2px solid var(--color-grey);
+}
+
+.input-validation input:invalid {
+    border-color: var(--color-pure-red);
+}
+
+/* Code order matter here  as it will be red first and then as :placeholder-shown it will be grey*/
+
+.input-validation input:placeholder-shown {
+    border-color: var(--color-grey);
+}
+
+.input-validation input:valid {
+    border-color: var(--color-green);
+}

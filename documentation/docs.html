@@ -36,7 +36,7 @@
                     <a href="#buttons-sec" class="links link-primary">Buttons</a>
                     <a href="#cards-sec" class="links link-primary">Crads</a>
                     <a href="#images-sec" class="links link-primary">Images</a>
-                    <a href="" class="links link-primary">Inputs</a>
+                    <a href="#inputs-sec" class="links link-primary">Inputs</a>
                 </div>
             </aside>
             <div class="docs-sec">
@@ -582,8 +582,65 @@
                         </div>
                     </div>
                 </section>
+                <section id="inputs-sec">
+                    <div class="comp-intro">
+                        <h1 class="headline-1 text-head">Inputs</h1>
+                        <p class="headline-3">
+                            Inputs are used to take information from users.
+                        </p>
+                    </div>
+                    <div class="comp-details">
+                        <h2 class="headline-2 text-sub-head">Examples of Textarea input</h2>
+                        <p class="text-mid">
+                            To use textarea as an input use <span class="text-pri-color">input-textarea</span> class and
+                            to make it non-resizable use <span class="text-pri-color"> no-resize</span> class.
+                        </p>
+                        <div class="comp-examples center-flex padd-1r">
+                            <!-- Textarea here -->
+                            <textarea name="" id="" cols="30" rows="5" class="input-textarea bor-4p marg-lr-4p"
+                                placeholder="Input here"></textarea>
+                            <!-- Non resizable textarea here -->
+                            <textarea name="" id="" cols="30" rows="5"
+                                class="input-textarea no-resize bor-4p marg-lr-4p" placeholder="Input here"></textarea>
+                        </div>
+                        <div class="iframe-sec center-flex">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=blackboard&wt=none&l=text%2Fx-c%2B%2Bsrc&width=718&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=21px&ph=18px&ln=false&fl=1&fm=Hack&fs=13px&lh=124%25&si=false&es=2x&wm=false&code=%250A%253C%21--%2520Textarea%2520here%2520--%253E%250A%253Ctextarea%2520name%253D%2522%2522%2520id%253D%2522%2522%2520cols%253D%252230%2522%2520rows%253D%25225%2522%2520class%253D%2522input-textarea%2520bor-4p%2520marg-lr-4p%2522placeholder%253D%2522Input%2520here%2522%253E%253C%252Ftextarea%253E%250A%250A%253C%21--%2520Non%2520resizable%2520textarea%2520here%2520--%253E%250A%253Ctextarea%2520name%253D%2522%2522%2520id%253D%2522%2522%2520cols%253D%252230%2522%2520rows%253D%25225%2522%2520class%253D%2522input-textarea%2520no-resize%2520bor-4p%2520marg-lr-4p%2522%2520placeholder%253D%2522Input%2520here%2522%253E%253C%252Ftextarea%253E%250A%2520%2520"
+                                style="width: 100%; height: 230px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="comp-details">
+                        <h2 class="headline-2 text-sub-head">Examples of Input with validation error</h2>
+                        <p class="text-mid">
+                            To use a from with Validation and error styling use <span
+                                class="text-pri-color">input-validation</span> class in your form.
+                        </p>
+                        <div class="comp-examples center-flex flex-d-col padd-1r">
+
+                            <!-- Validation form here -->
+                            <form action="" onsubmit="return false" class="input-validation center-flex flex-wrap">
+                                    <input type="text" placeholder="Enter username here" class="padd-1r marg-1r"
+                                        required>
+                                    <input type="email" placeholder="Enter email here" class="padd-1r marg-1r" required>
+                                    <input type="password" placeholder="Enter password here" class="padd-1r marg-1r"
+                                        required>
+                                    <button type="submit" class="btns btn-secondary">Sign Up</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="iframe-sec center-flex">
+                      <iframe
+                          src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=blackboard&wt=none&l=text%2Fx-c%2B%2Bsrc&width=718&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=21px&ph=18px&ln=false&fl=1&fm=Hack&fs=13px&lh=124%25&si=false&es=2x&wm=false&code=%253C%21--%2520Validation%2520form%2520here%2520--%253E%250A%2520%2520%250A%253Cform%2520action%253D%2522%2522%2520onsubmit%253D%2522return%2520false%2522%2520class%253D%2522input-validation%2520center-flex%2520flex-wrap%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522inputs-box%2520center-flex%2520flex-wrap%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520placeholder%253D%2522Enter%2520username%2520here%2522%2520class%253D%2522padd-1r%2520marg-1r%2522%2520required%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522email%2522%2520placeholder%253D%2522Enter%2520email%2520here%2522%2520class%253D%2522padd-1r%2520marg-1r%2522%2520required%253E%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522password%2522%2520placeholder%253D%2522Enter%2520password%2520here%2522%2520class%253D%2522padd-1r%2520marg-1r%2522%2520required%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522btns-box%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522submit%2522%2520class%253D%2522btns%2520btn-secondary%2522%253ESign%2520Up%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fform%253E"
+                          style="width: 100%; height: 294px; border:0; transform: scale(1); overflow:hidden;"
+                          sandbox="allow-scripts allow-same-origin">
+                      </iframe>
+                    </div>
             </div>
-        </main>
+            </section>
+    </div>
+    </main>
     </div>
 </body>
 </html>
