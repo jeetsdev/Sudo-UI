@@ -1,0 +1,52 @@
+@import url(components.css);
+
+
+/* Just for documentation purpose */
+#navigations-sec .nav {
+    border: 2px solid var(--color-grey);
+}
+
+/*! navbar style here  */
+
+.nav {
+    height: 5rem;
+    width: 100%;
+}
+
+/* Title section here */
+.nav .nav-title {
+    margin-right: auto;
+    margin-left: 1rem;
+}
+
+/* Search section here */
+.nav .nav-search {
+    margin: auto;
+}
+
+.nav .nav-search form {
+    border: 1px solid var(--color-grey);
+    gap: 5px;
+}
+
+.nav .nav-search input{
+    margin: 0 .5rem;
+    background-color: inherit;
+    outline: none;
+    border: transparent;
+}
+
+/*Buttons section here  */
+.nav .nav-buttons .fas {
+    font-size: 2rem;
+    color: var(--color-grey);
+    transition: .5s ease-in-out;
+}
+
+.nav .nav-buttons .fas:hover {
+    color: var(--color-pri);
+}
+
+.nav .nav-buttons span {
+    background-color: var(--color-pure-red);
+}
