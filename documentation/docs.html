@@ -9,6 +9,7 @@
     <title>Docs - LagomUI</title>
     <link rel="stylesheet" href="../components/components.css">
     <link rel="stylesheet" href="../css/docs.css">
+    <script src="../scripts/rating.js" defer></script>
 </head>
 <body>
     <div class="container-docs center-flex flex-d-col">
@@ -41,6 +42,7 @@
                     <a href="#lists-sec" class="links link-primary">Lists</a>
                     <a href="#navigation-sec" class="links link-primary">Navigation</a>
                     <a href="#modal-sec" class="links link-primary">Modal</a>
+                    <a href="#rating-sec" class="links link-primary">Rating</a>
                 </div>
             </aside>
             <div class="docs-sec">
@@ -887,8 +889,10 @@
                     <div class="comp-details">
                         <h2 class="headline-2 text-sub-head">Example of Modal</h2>
                         <p class="text-mid">
-                            We have a basic modal with save, close and dismiss button. You can copy the below code snippet to use that. 
-                            To make it functional just toggle <span class="text-pri-color">modal-active</span> class in modal-box section.
+                            We have a basic modal with save, close and dismiss button. You can copy the below code
+                            snippet to use that.
+                            To make it functional just toggle <span class="text-pri-color">modal-active</span> class in
+                            modal-box section.
                         </p>
                         <div class="comp-examples center-flex flex-wrap padd-1r">
 
@@ -922,6 +926,39 @@
                             <iframe
                                 src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=blackboard&wt=none&l=text%2Fx-c%2B%2Bsrc&width=718&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=21px&ph=18px&ln=false&fl=1&fm=Hack&fs=13px&lh=124%25&si=false&es=2x&wm=false&code=%253C%21--%2520Here%2520in%2520the%2520%2522modal-box%2522%2520toggle%2520%2522modal-active%2522%2520class%2520to%2520show%2520and%2520hide%2520modal%2520--%253E%250A%2520%2520%250A%2520%2520%253Cdiv%2520class%253D%2522modal-box%2522%253E%250A%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal%2520padd-lr-8p%2522%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Dismiss%2520button%2520%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times-circle%2520dismiss-btn%2520bor-full%2522%253E%253C%252Fi%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Modal%2520title%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-title-sec%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522headline-3%2522%253EModal%2520title%2520here%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Modal%2520discription--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-info-sec%2520text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%252C%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Numquam%252C%2520amet.%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Modal%2520buttons%2520here%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-btn-sec%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btns%2520btn-secondary%2520bor-4p%2520marg-lr-8p%2522%253EClose%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btns%2520btn-primary%2520bor-4p%2522%253ESave%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%2509%250A%2520"
                                 style="width: 100%; height: 536px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+                <section id="rating-sec">
+                    <div class="comp-intro">
+                        <h1 class="headline-1 text-head">Rating</h1>
+                        <p class="headline-3">
+                            Rating components are used to show customer satisfaction with the product or service.
+                        </p>
+                    </div>
+                    <div class="comp-details">
+                        <h2 class="headline-2 text-sub-head">Example of Rating</h2>
+                        <p class="text-mid">
+                            We have a basic rating component here. To make it filled add <span
+                                class="text-pri-color">fas</span> class in the <span class="text-pri-color">i</span>
+                            element.
+                        </p>
+                        <div class="comp-examples center-flex flex-wrap padd-1r">
+                            <div class="rating-box">
+                                <!-- Rating stars here -->
+                                <i class="far fas fa-star star-5"></i>
+                                <i class="far fas fa-star star-4"></i>
+                                <i class="far fas fa-star star-3"></i>
+                                <i class="far fas fa-star star-2"></i>
+                                <i class="far fa-star star-1"></i>
+                            </div>
+                        </div>
+                        <div class="iframe-sec center-flex">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=blackboard&wt=none&l=text%2Fx-c%2B%2Bsrc&width=718&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=21px&ph=18px&ln=false&fl=1&fm=Hack&fs=13px&lh=124%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522rating-box%2522%253E%250A%2520%250A%2509%253C%21--%2520Rating%2520stars%2520here%2520--%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fas%2520fa-star%2520star-5%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fas%2520fa-star%2520star-4%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fas%2520fa-star%2520star-3%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fas%2520fa-star%2520star-2%2522%253E%253C%252Fi%253E%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-star%2520star-1%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                                style="width: 100%; height: 262px; border:0; transform: scale(1); overflow:hidden;"
                                 sandbox="allow-scripts allow-same-origin">
                             </iframe>
                         </div>

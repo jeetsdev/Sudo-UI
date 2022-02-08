@@ -1,0 +1,12 @@
+@import url(components.css);
+
+.rating-box .fa-star {
+    font-size: 1.5rem;
+}
+
+.rating-box .fas.fa-star {
+    color: var(--color-pure-yellow);
+}
+
+
+.star-1.fas
