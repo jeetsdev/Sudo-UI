@@ -39,7 +39,8 @@
                     <a href="#inputs-sec" class="links link-primary">Inputs</a>
                     <a href="#text-utilities-sec" class="links link-primary">Text-Utilities</a>
                     <a href="#lists-sec" class="links link-primary">Lists</a>
-                    <a href="#navigations-sec" class="links link-primary">Navigations</a>
+                    <a href="#navigation-sec" class="links link-primary">Navigation</a>
+                    <a href="#modal-sec" class="links link-primary">Modal</a>
                 </div>
             </aside>
             <div class="docs-sec">
@@ -871,6 +872,56 @@
                             <iframe
                                 src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=blackboard&wt=none&l=text%2Fx-c%2B%2Bsrc&width=718&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=21px&ph=18px&ln=false&fl=1&fm=Hack&fs=13px&lh=124%25&si=false&es=2x&wm=false&code=%2520%253Cnav%2520class%253D%2522nav%2520center-flex%2522%253E%250A%250A%2520%2520%2520%2520%253C%21--%2520Title%2520section%2520here%2520--%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav-title%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522headline-3%2522%253E%2520Lagom%2520%253C%252Fh3%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253C%21--%2520Search%2520section%2520here--%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav-search%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cform%2520action%253D%2522%2522%2520onsubmit%253D%2522return%2520false%2522%2520class%253D%2522center-flex%2522%253E%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-search%2520marg-8p%2520txt-grey%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520placeholder%253D%2522Search%2520items%2520here%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fform%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253C%21--%2520Button%2520section%2520here--%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav-buttons%2520center-flex%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btns%2520btn-primary%2522%253ELogin%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2520marg-1r%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-text%2520bor-full%2520center-flex%2522%253E0%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2520marg-1r%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-text%2520bor-full%2520center-flex%2522%253E0%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fnav%253E%250A"
                                 style="width: 100%; height: 568px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+                <section id="modal-sec">
+                    <div class="comp-intro">
+                        <h1 class="headline-1 text-head">Modal</h1>
+                        <p class="headline-3">
+                            Modal are used to grab the user attention and show some important information.
+                        </p>
+                    </div>
+                    <div class="comp-details">
+                        <h2 class="headline-2 text-sub-head">Example of Modal</h2>
+                        <p class="text-mid">
+                            We have a basic modal with save, close and dismiss button. You can copy the below code snippet to use that. 
+                            To make it functional just toggle <span class="text-pri-color">modal-active</span> class in modal-box section.
+                        </p>
+                        <div class="comp-examples center-flex flex-wrap padd-1r">
+
+                            <!-- Here toggle "modal-active" class to show and hide modal -->
+                            <div class="modal-box">
+
+                                <div class="modal padd-lr-8p">
+
+                                    <!-- Dismiss button  -->
+                                    <i class="fas fa-times-circle dismiss-btn bor-full"></i>
+
+                                    <!-- Modal title -->
+                                    <div class="modal-title-sec">
+                                        <h3 class="headline-3">Modal title here</h3>
+                                    </div>
+
+                                    <!-- Modal discription-->
+                                    <div class="modal-info-sec text">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, amet.
+                                    </div>
+
+                                    <!-- Modal buttons here -->
+                                    <div class="modal-btn-sec">
+                                        <button class="btns btn-secondary bor-4p marg-lr-8p">Close</button>
+                                        <button class="btns btn-primary bor-4p">Save</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="iframe-sec center-flex">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=blackboard&wt=none&l=text%2Fx-c%2B%2Bsrc&width=718&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=21px&ph=18px&ln=false&fl=1&fm=Hack&fs=13px&lh=124%25&si=false&es=2x&wm=false&code=%253C%21--%2520Here%2520in%2520the%2520%2522modal-box%2522%2520toggle%2520%2522modal-active%2522%2520class%2520to%2520show%2520and%2520hide%2520modal%2520--%253E%250A%2520%2520%250A%2520%2520%253Cdiv%2520class%253D%2522modal-box%2522%253E%250A%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal%2520padd-lr-8p%2522%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Dismiss%2520button%2520%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times-circle%2520dismiss-btn%2520bor-full%2522%253E%253C%252Fi%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Modal%2520title%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-title-sec%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522headline-3%2522%253EModal%2520title%2520here%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Modal%2520discription--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-info-sec%2520text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%252C%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Numquam%252C%2520amet.%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Modal%2520buttons%2520here%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-btn-sec%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btns%2520btn-secondary%2520bor-4p%2520marg-lr-8p%2522%253EClose%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btns%2520btn-primary%2520bor-4p%2522%253ESave%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%2509%250A%2520"
+                                style="width: 100%; height: 536px; border:0; transform: scale(1); overflow:hidden;"
                                 sandbox="allow-scripts allow-same-origin">
                             </iframe>
                         </div>
