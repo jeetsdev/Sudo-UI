@@ -30,7 +30,7 @@
 }
 
 .nav .nav-search input{
-    margin: 0 .5rem;
+    margin: 0 0.5rem;
     background-color: inherit;
     outline: none;
     border: transparent;
@@ -38,6 +38,7 @@
 
 /*Buttons section here  */
 .nav .nav-buttons .fas {
+    cursor: pointer;
     font-size: 2rem;
     color: var(--color-grey);
     transition: .5s ease-in-out;
