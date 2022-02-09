@@ -42,6 +42,7 @@
                     <a href="#navigation-sec" class="links link-primary">Navigation</a>
                     <a href="#modal-sec" class="links link-primary">Modal</a>
                     <a href="#rating-sec" class="links link-primary">Rating</a>
+                    <a href="#toast-sec" class="links link-primary">Toast</a>
                 </div>
             </aside>
             <div class="docs-sec">
@@ -958,6 +959,44 @@
                             <iframe
                                 src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=blackboard&wt=none&l=text%2Fx-c%2B%2Bsrc&width=718&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=21px&ph=18px&ln=false&fl=1&fm=Hack&fs=13px&lh=124%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522rating-box%2522%253E%250A%2520%250A%2509%253C%21--%2520Rating%2520stars%2520here%2520--%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fas%2520fa-star%2522%253E%253C%252Fi%253E%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
                                 style="width: 100%; height: 262px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+                <section id="toast-sec">
+                    <div class="comp-intro">
+                        <h1 class="headline-1 text-head">Toasts</h1>
+                        <p class="headline-3">
+                            A toast provides simple feedback about an operation in a small popup.
+                        </p>
+                    </div>
+                    <div class="comp-details">
+                        <h2 class="headline-2 text-sub-head">Example of Toast</h2>
+                        <p class="text-mid">
+                            We have two type of toast here, You can use them and to make them functional just toggle
+                            <span class="text-pri-color"> toast-active </span> class in the <span
+                                class="text-pri-color">toast-box</span> section.
+                        </p>
+                        <div class="comp-examples center-flex flex-wrap padd-1r">
+                            <!-- Success toast here-->
+                            <div class="toast-box toast-suc center-flex marg-lr-8p">
+                                <i class="fas fa-check"></i>
+                                <p>Added to Cart</p>
+                                <i class="fas fa-times-circle cancel-btn"></i>
+                            </div>
+
+                            <!-- Error toast here-->
+                            <div class="toast-box toast-err center-flex marg-lr-8p">
+                                <i class="fas fa-exclamation"></i>
+                                <p>Removed from wishlist</p>
+                                <i class="fas fa-times-circle cancel-btn"></i>
+                            </div>
+                        </div>
+                        <div class="iframe-sec center-flex">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=blackboard&wt=none&l=text%2Fx-c%2B%2Bsrc&width=718&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=21px&ph=18px&ln=false&fl=1&fm=Hack&fs=13px&lh=124%25&si=false&es=2x&wm=false&code=%253C%21--%2520Success%2520toast%2520here--%253E%250A%253Cdiv%2520class%253D%2522toast-box%2520toast-suc%2520center-flex%2520marg-lr-8p%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-check%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cp%253EAdded%2520to%2520Cart%253C%252Fp%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times-circle%2520cancel-btn%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520Error%2520toast%2520here--%253E%250A%253Cdiv%2520class%253D%2522toast-box%2520toast-err%2520center-flex%2520marg-lr-8p%2522%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cp%253ERemoved%2520from%2520wishlist%253C%252Fp%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times-circle%2520cancel-btn%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A"
+                                style="width: 100%; height: 327px; border:0; transform: scale(1); overflow:hidden;"
                                 sandbox="allow-scripts allow-same-origin">
                             </iframe>
                         </div>
