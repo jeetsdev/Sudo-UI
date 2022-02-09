@@ -1,0 +1,44 @@
+@import url(components.css);
+
+#grid-sec .comp-examples {
+    justify-content: initial;
+}
+
+/*! For documentation purppose  */
+
+#grid-sec .grid {
+    min-height: 10rem;
+}
+
+#grid-sec .grid div:nth-child(even) {
+    background-color: var(--color-off-yellow);
+}
+
+#grid-sec .grid div:nth-child(odd) {
+    background-color: var(--color-off-green);
+}
+
+
+/*! Grid style here */
+
+.grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    gap: 10px;
+}
+
+/* Grid 50:50 style */
+.grid.grid-50-50-col {
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Grid 70:30 style */
+.grid.grid-70-30-col {
+    grid-template-columns: 7fr 3fr;
+}
+
+/* Grid 4 column style */
+.grid.grid-4-col {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
