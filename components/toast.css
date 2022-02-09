@@ -1,0 +1,48 @@
+@import url(components.css);
+
+/* Just for documentation purpose */
+#toast-sec .toast-box {
+    display: flex;
+}
+
+/*! Toast style here */
+
+.toast-box {
+    display: none;
+    border-radius: 5px;
+    max-width: fit-content;
+}
+
+.toast-box>* {
+    padding: 1rem;
+}
+
+.toast-box .cancel-btn {
+    transition: transform .3s;
+
+}
+
+.toast-box .cancel-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Success toast here */
+.toast-box.toast-suc {
+    color: var(--color-green);
+    background-color: var(--color-off-green);
+}
+
+/* Error toast here */
+.toast-box.toast-err {
+    color: var(--color-red);
+    background-color: var(--color-off-red);
+}
+
+/*! Active toast style here */
+
+.toast-box.toast-active {
+    display: flex;
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+}
