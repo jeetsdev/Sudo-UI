@@ -5,15 +5,15 @@
     box-shadow: 0 0 10px var(--color-off-white);
 }
 
-/* Humburger button style here */
-#btn-humburger {
+/* Hamburger button style here */
+#btn-hamburger {
     display: none;
     margin-right: 2rem;
     font-size: 1.3rem;
     transition: all .3s ease-in-out;
 }
 
-#btn-humburger:active {
+#btn-hamburger:active {
     transform: scale(1.1);
 }
 
@@ -48,8 +48,7 @@
 }
 
 .sidebar-links .links {
-    margin: .5rem 0;
-    padding: .5rem;
+    padding: 1rem;
     width: 100%;
 }
 
@@ -59,10 +58,12 @@
 
 .sidebar-links .links:hover,
 .sidebar-links .links:focus {
+    font-weight: 800;
     transform: translateX(5px);
 }
 
 .sidebar-link-active {
+    font-weight: 800;
     transform: translateX(5px);
     color: var(--color-pri);
 }
@@ -129,7 +130,7 @@
         z-index: 2;
     }
 
-    #btn-humburger {
+    #btn-hamburger {
         display: block;
     }
 

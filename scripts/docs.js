@@ -1,10 +1,10 @@
-const btnHumburger = document.querySelector("#btn-humburger");
+const btnHamburger = document.querySelector("#btn-hamburger");
 const sidebar = document.querySelector(".sidebar");
 const sidebarLinks = document.querySelectorAll(".sidebar-links > *");
 
-// ! humburger button event here
+// ! hamburger button event here
 
-btnHumburger.addEventListener('click', () => {
+btnHamburger.addEventListener('click', () => {
     ShowHideSidebar(sidebar);
 })
 
