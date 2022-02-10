@@ -1,25 +1,36 @@
 /*! Documentation style here  */
 
-.container-docs{
-flex-direction: column;
-}
 
-.container-docs .navbar{
+.container-docs .navbar {
     box-shadow: 0 0 10px var(--color-off-white);
 }
 
+/* Humburger button style here */
+#btn-humburger {
+    display: none;
+    margin-right: 2rem;
+    font-size: 1.3rem;
+    transition: all .3s ease-in-out;
+}
 
-.main-docs{
+#btn-humburger:active {
+    transform: scale(1.1);
+}
+
+
+/* Main docs style here */
+
+.main-docs {
     width: 100%;
-    align-items: flex-start;
     color: var(--text-sec);
     position: relative;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
 }
 
 /** Sidebar style here */
 
-.sidebar{
+.sidebar {
     box-shadow: 0 5px 10px var(--color-off-white);
     height: 100vh;
     left: 0;
@@ -27,38 +38,49 @@ flex-direction: column;
     padding: 1rem;
     position: sticky;
     top: 0;
-    flex-basis: 450px;
-    /* transform: translateX(-100%); */
+    transition: all .3s ease-in-out;
 }
 
 
-.sidebar-links{
+.sidebar-links {
     align-items: flex-start;
     flex-direction: column;
 }
 
-.sidebar-links .links{
+.sidebar-links .links {
     margin: .5rem 0;
     padding: .5rem;
     width: 100%;
 }
 
-.docs-sec{
-    margin:0 1rem;
-    flex-grow: 1;
-    padding-right: 2rem;
+.sidebar-links .links:last-child {
+    margin-bottom: 10vh;
 }
 
-.docs-sec section{
+.sidebar-links .links:hover,
+.sidebar-links .links:focus {
+    transform: translateX(5px);
+}
+
+.sidebar-link-active {
+    transform: translateX(5px);
+    color: var(--color-pri);
+}
+
+/* Sections style here */
+
+.docs-sec section {
     padding: 1rem;
 }
 
-.docs-sec section > *{
-    margin: 1rem 0 ;
+.docs-sec section>* {
+    margin: 1rem 0;
 }
 
+/* COmponent style here*/
+
 .comp-intro>*,
-.comp-details>*{
+.comp-details>* {
     margin: 1rem 0;
 }
 
@@ -67,9 +89,58 @@ flex-direction: column;
     border-radius: 5px;
 }
 
-
-.iframe-sec{
+.iframe-sec {
     width: 100%;
 }
 
+/* ! Media queries here */
 
+@media screen and (max-width:800px) {
+    .main-docs {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+        grid-row-start: 2;
+        /* So that sidebar gets at the end of the page and no ui changes on clicks */
+        background-color: var(--color-off-white);
+        z-index: 1;
+        transition: all .3s ease;
+    }
+
+    .active-sidebar {
+        position: fixed;
+        top: 10vh;
+        right: 0;
+        height: 100%;
+        opacity: 1;
+        overflow-y: auto;
+    }
+
+
+    .navbar {
+        min-width: 100vw;
+        position: fixed;
+        top: 0;
+        background-color: var(--color-white);
+        z-index: 2;
+    }
+
+    #btn-humburger {
+        display: block;
+    }
+
+    .nav-right a:nth-child(2),
+    .nav-right a:nth-child(3) {
+        display: none;
+    }
+
+    /* Matgin top so that doesn't gets under the nav  */
+    .docs-sec {
+        margin-top: 10vh;
+    }
+
+}

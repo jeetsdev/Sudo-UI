@@ -9,6 +9,7 @@
     <title>Docs - LagomUI</title>
     <link rel="stylesheet" href="../components/components.css">
     <link rel="stylesheet" href="../css/docs.css">
+    <script src="../scripts/docs.js" defer></script>
 </head>
 <body>
     <div class="container-docs center-flex flex-d-col">
@@ -22,15 +23,16 @@
                 <a href="https://github.com/jeetsdev" target="_blank" class="links link-primary text-mid">
                     <i class="fab fa-github"></i>
                 </a>
+                 <i class="fas fa-bars padd-1r" id="btn-humburger"></i>
             </div>
         </nav>
-        <main class="main-docs center-flex">
+        <main class="main-docs">
             <aside class="sidebar">
                 <div class="sidebar-head">
                     <h2 class="headline-3 text-sub-head">Components</h2>
                 </div>
                 <div class="sidebar-links center-flex">
-                    <a href="#avatars-sec" class="links link-primary">Avatars</a>
+                    <a href="#avatars-sec" class="links link-primary sidebar-link-active">Avatars</a>
                     <a href="#alerts-sec" class="links link-primary">Alerts</a>
                     <a href="#badges-sec" class="links link-primary">Badges</a>
                     <a href="#buttons-sec" class="links link-primary">Buttons</a>
@@ -63,7 +65,7 @@
                                 , avatar-sml.</span>
                             You can also copy the below code snippet.
                         </p>
-                        <div class="comp-examples center-flex">
+                        <div class="comp-examples center-flex flex-wrap">
                             <img src="/assets/avatars/img-avatar3.jpeg" alt="img-avatars"
                                 class="avatars avatar-big bor-full marg-1r">
                             <img src="/assets/avatars/img-avatar2.jpeg" alt="img-avatars"
@@ -86,7 +88,7 @@
                             others. You can use
                             diffrent classes for diffrent sizes.
                         </p>
-                        <div class="comp-examples center-flex">
+                        <div class="comp-examples center-flex flex-wrap">
                             <p class="avatar-big bor-full center-flex avatar-txt marg-1r">RS</p>
                             <p class="avatar-mid bor-full center-flex avatar-txt marg-1r">RS</p>
                             <p class="avatar-sml bor-full center-flex avatar-txt marg-1r">RS</p>
@@ -116,7 +118,7 @@
                                 alert-war, alert-dan</span> for diffrent types of alerts.
                             You can use diffrent style classes for diffrent stylling.
                         </p>
-                        <div class="comp-examples center-flex flex-d-col">
+                        <div class="comp-examples center-flex flex-wrap flex-d-col">
                             <div class="alerts alert-pri padd-1r marg-1r bor-small text-mid">
                                 <p>
                                     This is a Primary alert.
@@ -124,7 +126,7 @@
                             </div>
                             <div class="alerts alert-suc padd-1r marg-1r bor-small text-mid">
                                 <p>
-                                    <i class="fas fa-check-circle marg-8p"></i>
+                                    <i class="fas fa-bars marg-8p"></i>
                                     This is a Success alert.
                                 </p>
                             </div>
@@ -167,7 +169,7 @@
                             sizes by using <span class="text-pri-color">badge-big, badge-mid, or badge-sml</span>
                             classes.
                         </p>
-                        <div class="comp-examples center-flex">
+                        <div class="comp-examples center-flex flex-wrap">
                             <div class="badge-container marg-1r">
                                 <img src="/assets/avatars/img-avatar1.jpeg" alt="img-avatars"
                                     class="avatars avatar-big bor-full  ">
@@ -198,7 +200,7 @@
                             Use <span class="text-pri-color">badge-text</span> class for text badges. You can also copy
                             the code snippet as it is.
                         </p>
-                        <div class="comp-examples center-flex">
+                        <div class="comp-examples center-flex flex-wrap">
                             <div class="badge-container marg-1r">
                                 <i class="fas fa-shopping-cart"></i>
                                 <span class="badge-text bor-full center-flex">7</span>
@@ -320,7 +322,7 @@
                             To add badges on the card use <span class="text-pri-color">card-badge</span> class and
                             include badge in the code.
                         </p>
-                        <div class="comp-examples center-flex padd-1r">
+                        <div class="comp-examples center-flex flex-wrap padd-1r">
                             <div class="card card-vert marg-1r">
                                 <div class="card-upper-sec center-flex flex-d-col">
                                     <div class="card-upper-icon center-flex">
@@ -378,7 +380,7 @@
                                 class</span>, or copy the below code snippet as it is. For a shadow use <span
                                 class="text-pri-color">card-shadow</span> class.
                         </p>
-                        <div class="comp-examples center-flex padd-1r">
+                        <div class="comp-examples center-flex flex-wrap padd-1r">
 
                             <!-- Horizental Card here -->
 
@@ -434,7 +436,7 @@
                             For a text only card use <span class="text-pri-color">card-text-only</span> and if you want
                             to include dismiss button use <span class="text-pri-color">card-dismiss</span> class.
                         </p>
-                        <div class="comp-examples center-flex padd-1r">
+                        <div class="comp-examples center-flex flex-wrap padd-1r">
 
                             <!-- Text only Card here -->
                             <div class="card card-text-only card-shadow marg-1r">
@@ -494,7 +496,7 @@
                             <span>text-overlay-sec</span> and for Out of Stock card use <span
                                 class="text-pri-color">oss</span> class.
                         </p>
-                        <div class="comp-examples center-flex padd-1r">
+                        <div class="comp-examples center-flex flex-wrap padd-1r">
 
                             <!-- New Arrivals card here -->
                             <div class="card card-vert card-txt-over marg-1r">
@@ -602,12 +604,12 @@
                             To use textarea as an input use <span class="text-pri-color">input-textarea</span> class and
                             to make it non-resizable use <span class="text-pri-color"> no-resize</span> class.
                         </p>
-                        <div class="comp-examples center-flex padd-1r">
+                        <div class="comp-examples center-flex flex-wrap padd-1r">
                             <!-- Textarea here -->
-                            <textarea name="" id="" cols="30" rows="5" class="input-textarea bor-4p marg-lr-4p"
+                            <textarea name="" id="" cols="15" rows="5" class="input-textarea bor-4p marg-lr-4p"
                                 placeholder="Input here"></textarea>
                             <!-- Non resizable textarea here -->
-                            <textarea name="" id="" cols="30" rows="5"
+                            <textarea name="" id="" cols="15" rows="5"
                                 class="input-textarea no-resize bor-4p marg-lr-4p" placeholder="Input here"></textarea>
                         </div>
                         <div class="iframe-sec center-flex">
@@ -656,10 +658,10 @@
                         <p class="text-mid">
                             For headings you can use <span class="text-pri-color">h1, h2, h3, h4, h5, h6</span> classes.
                         </p>
-                        <div class="comp-examples padd-1r">
+                        <div class="comp-examples padd-1r >
 
                             <!-- Headings here -->
-                            <p class="h1 marg-ud-8p">Heading H1</p>
+                            <p class=" h1 marg-ud-8p">Heading H1</p>
                             <p class="h2 marg-ud-8p">Heading H2</p>
                             <p class="h3 marg-ud-8p">Heading H3</p>
                             <p class="h4 marg-ud-8p">Heading H4</p>
@@ -680,10 +682,10 @@
                             For headings you can use <span class="text-pri-color">h1, h2, h3, h4, h5, h6</span>
                             classes.
                         </p>
-                        <div class="comp-examples padd-1r">
+                        <div class="comp-examples padd-1r >
 
                             <!-- Text styles here e-->
-                            <p class="marg-ud-8p">Normal text here</p>
+                            <p class=" marg-ud-8p">Normal text here</p>
 
                             <!-- Small text here -->
                             <p class="txt-sml marg-ud-8p">Small text here.</p>
@@ -842,7 +844,7 @@
                             To use the below navigation bar just copy the code snippet as it is.
                         </p>
                         <div class="comp-examples center-flex flex-wrap padd-1r">
-                            <nav class="nav center-flex">
+                            <nav class="nav center-flex flex-wrap">
 
                                 <!-- Title section here -->
                                 <div class="nav-title">
