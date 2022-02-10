@@ -10,7 +10,7 @@
 
 /*! Vertical card style here  */
 
-.card-vert {
+.card-vertical {
     color: var(--color-pure-black);
     max-width: 20rem;
     max-height: 30.25rem;
@@ -110,33 +110,33 @@
 
 /*! Card horizontal style here */
 
-.card-horz {
+.card-horizontal {
     color: var(--color-pure-black);
     grid-template-columns: 1.5fr 2.5fr;
 }
 
-.card-horz .card-lower-sec {
+.card-horizontal .card-lower-sec {
     justify-content: space-around;
 }
 
-.card-horz .lower-disc {
+.card-horizontal .lower-disc {
     width: 70%;
     margin: 0;
 }
 
-.card-horz .lower-title {
+.card-horizontal .lower-title {
     font-size: 1.5rem;
 }
 
-.card-horz .lower-price-sec {
+.card-horizontal .lower-price-sec {
     justify-content: flex-start;
 }
 
-.card-horz .lower-price {
+.card-horizontal .lower-price {
     font-size: 2rem;
 }
 
-.card-horz .card-lower-btns {
+.card-horizontal .card-lower-btns {
     width: 70%;
     justify-content: space-around;
 }
