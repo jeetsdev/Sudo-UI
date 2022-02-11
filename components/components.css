@@ -1,6 +1,7 @@
-@import url(../css/landing.css);
+@import url(../landing.css);
 @import url(../css/main.css);
 @import url(../css/utlitiy.css);
+@import url(../css/reset.css);
 @import url(avatars.css);
 @import url(alerts.css);
 @import url(badges.css);
