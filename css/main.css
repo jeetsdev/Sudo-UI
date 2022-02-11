@@ -2,16 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Mogra&family=Roboto&display=swap');
 
-/*! Reset CSS */
-
-*,
-*::after,
-*::before {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
 
 :root {
     --color-pri: #8b5cf6;
@@ -30,8 +20,8 @@
     --color-pure-white: #fff;
     --color-pure-black: #000;
     --color-pure-red: red;
-    --color-trans-red:rgba(255, 0, 0, 0.300);
-    --color-trans-grey:#6b6b6b9c;
+    --color-trans-red: rgba(255, 0, 0, 0.300);
+    --color-trans-grey: #6b6b6b9c;
     --color-pure-yellow: yellow;
 }
 
@@ -151,13 +141,6 @@ body {
 
 .links:hover {
     color: var(--color-pri);
-}
-
-
-/*! List style here  */
-
-ul {
-    list-style: none;
 }
 
 
