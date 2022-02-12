@@ -10,7 +10,7 @@
 
 /*! Vertical card style here  */
 
-.card-vertical {
+.card__vertical {
     color: var(--color-pure-black);
     max-width: 20rem;
     max-height: 30.25rem;
@@ -20,12 +20,12 @@
 
 /** Card upper section */
 
-.card-upper-icon {
+.card__upper-icon {
     width: 100%;
     justify-content: flex-end;
 }
 
-.card-upper-icon i {
+.card__upper-icon i {
     cursor: pointer;
     font-size: 1.2em;
     width: 2.5rem;
@@ -39,25 +39,25 @@
     color: var(--color-pure-red);
 }
 
-.card-upper-image img {
+.card__upper-image img {
     height: 17rem;
     width: 16rem;
 }
 
 /* * Card lower section */
 
-.card-lower-sec {
+.card__sec-lower {
     line-height: 1.5rem;
     background-color: var(--color-pure-white);
 }
 
-.card-lower-sec .lower-disc {
+.card__sec-lower .lower__sec-details {
     margin: auto;
     justify-content: flex-end;
 }
 
-.card-lower-sec .lower-price,
-.card-lower-sec .lower-discount {
+.card__sec-lower .price__sec-current,
+.card__sec-lower .details__sec-discount {
     font-size: 1.2rem;
     font-weight: 700;
     color: var(--color-pure-black);
@@ -66,7 +66,7 @@
 
 /* Previous price style */
 
-.card-lower-sec .lower-price-prev {
+.card__sec-lower .price__sec-prev {
     font-size: 1.2rem;
     font-weight: 400;
     color: var(--color-grey);
@@ -75,17 +75,17 @@
 
 /* Discount style here */
 
-.card-lower-sec .lower-discount {
+.card__sec-lower .details__sec-discount {
     color: var(--color-grey);
 }
 
 /* Lower section buttons style */
 
-.card-lower-btns {
+.lower__sec-btn {
     width: 100%;
 }
 
-.card-lower-btns button {
+.lower__sec-btn button {
     /* Buttons font don't get inherits */
     font-family: inherit;
     width: 100%;
@@ -94,11 +94,11 @@
 
 /*! Badge card style here */
 
-.card-badge {
+.card__badge {
     position: relative;
 }
 
-.card-badge-icon {
+.card__badge-icon {
     top: .5rem;
     left: .5rem;
     padding: 4px;
@@ -110,56 +110,56 @@
 
 /*! Card horizontal style here */
 
-.card-horizontal {
+.card__horizontal {
     color: var(--color-pure-black);
     grid-template-columns: 1.5fr 2.5fr;
 }
 
-.card-horizontal .card-lower-sec {
+.card__horizontal .card__sec-lower {
     justify-content: space-around;
 }
 
-.card-horizontal .lower-disc {
+.card__horizontal .lower__sec-details {
     width: 70%;
     margin: 0;
 }
 
-.card-horizontal .lower-title {
+.card__horizontal .details__sec-title {
     font-size: 1.5rem;
 }
 
-.card-horizontal .lower-price-sec {
+.card__horizontal .details__sec-price {
     justify-content: flex-start;
 }
 
-.card-horizontal .lower-price {
+.card__horizontal .price__sec-current {
     font-size: 2rem;
 }
 
-.card-horizontal .card-lower-btns {
+.card__horizontal .lower__sec-btn {
     width: 70%;
     justify-content: space-around;
 }
 
 /*! Shadow card style here  */
 
-.card-shadow {
+.card__shadow {
     box-shadow: -1px 0px 10px var(--text-sec);
 }
 
 
 /*! Text only card here  */
 
-.card-text-only {
+.card__textonly {
     grid-template-rows: 1fr 1.5fr;
     max-width: 22rem;
 }
 
-.card-dismiss {
+.card__dismiss {
     position: relative;
 }
 
-.dismiss-btn {
+.dismiss__btn {
     cursor: pointer;
     font-size: 1.2rem;
     right: .5rem;
@@ -168,18 +168,18 @@
     transition: all .3s linear;
 }
 
-.dismiss-btn:hover {
+.dismiss__btn:hover {
     transform: scale(1.1);
     transition: all .3s linear;
 }
 
 /*! Text overlay card here  */
 
-.card-txt-over{
+.card__textover {
     position: relative;
 }
 
-.text-overlay-sec {
+.overlay__sec-text {
     color: var(--color-pure-white);
     position: absolute;
     z-index: 1;
@@ -189,12 +189,12 @@
     transform-origin: left;
 }
 
-.text-overlay-sec.new-arr {
+.overlay__sec-text.new-arr {
     bottom: 40%;
     background-color: var(--color-trans-red);
 }
 
-.text-overlay-sec.oos {
+.overlay__sec-text.oos {
     font-weight: 900;
     color: var(--color-white);
     background-color: var(--color-trans-grey);
@@ -202,6 +202,6 @@
     top: 0;
 }
 
-.text-overlay-sec.oos p{
+.overlay__sec-text.oos p {
     background-color: var(--color-trans-red);
 }
