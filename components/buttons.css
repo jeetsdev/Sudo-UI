@@ -12,30 +12,30 @@
 
 /** Solid buttons here */
 
-.btn-primary {
+.btn__primary {
     background-color: var(--color-pri);
 }
 
-.btn-secondary {
+.btn__secondary {
     background-color: var(--color-grey);
 }
 
-.btn-icon {
+.btn__icon {
     background-color: var(--color-pri);
 }
 
-.btn-icon>* {
+.btn__icon>* {
     margin: 0 2px;
 }
 
-.btn-float {
+.btn__float {
     width: 2.8rem;
     height: 2.8rem;
     background-color: var(--color-pri);
     box-shadow: 0px 0px 15px 4px var(--color-off-white);
 }
 
-.btn-link {
+.btn__link {
     text-decoration: underline;
     color: var(--color-pri);
     font-weight: 600;
@@ -44,18 +44,18 @@
 
 /** Ouline style here  */
 
-.btn-primary-outline,
-.btn-icon-outline {
+.btn__primary-outline,
+.btn__icon-outline {
     color: var(--color-pri);
     outline: 2px solid var(--color-pri);
 }
 
-.btn-secondary-outline {
+.btn__secondary-outline {
     color: var(--color-grey);
     outline: 2px solid var(--color-grey);
 }
 
-.btn-float-outline {
+.btn__float-outline {
     width: 2.8rem;
     height: 2.8rem;
     color: var(--color-pri);
@@ -65,42 +65,42 @@
 
 /*! hover states here  */
 
-.btn-primary:hover {
+.btn__primary:hover {
     background-color: var(--text-pri);
 }
 
 
-.btn-secondary:hover {
+.btn__secondary:hover {
     background-color: var(--color-off-white);
 }
 
 
 
-.btn-icon:hover {
+.btn__icon:hover {
     background-color: var(--text-pri);
 }
 
 
 
-.btn-float:hover {
+.btn__float:hover {
     background-color: var(--text-pri);
 }
 
 
-.btn-link:hover {
+.btn__link:hover {
     text-decoration: none;
     color: var(--text-pri);
 }
 
 
-.btn-primary-outline:hover,
-.btn-icon-outline:hover,
-.btn-float-outline:hover {
+.btn__primary-outline:hover,
+.btn__icon-outline:hover,
+.btn__float-outline:hover {
     color: var(--color-white);
     background-color: var(--color-pri);
 }
 
-.btn-secondary-outline:hover {
+.btn__secondary-outline:hover {
     color: var(--color-white);
     background-color: var(--color-grey);
 }
