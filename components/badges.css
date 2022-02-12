@@ -1,6 +1,6 @@
 @import url(components.css);
 
-.badge-container {
+.bagde__sec {
     position: relative;
 }
 
@@ -51,15 +51,15 @@
 
 /*! Text badges styles */
 
-.badge-container>.fas {
+.bagde__sec>.fas {
     font-size: 2em;
 }
 
-.badge-text {
+.bagde__sec-text {
     width: 1.5em;
     height: 1.5em;
     position: absolute;
-    bottom:1em;
+    bottom: 1em;
     left: 1.2em;
     background-color: var(--color-red);
     color: var(--color-white);
