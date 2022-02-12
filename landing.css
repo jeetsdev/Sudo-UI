@@ -4,13 +4,9 @@ body {
     width: 100%;
 }
 
-/* .container-main {
-    flex-direction: column;
-} */
-
 /*! Landing section style here  */
 
-.container-main .landing-sec {
+.coantainer__main .landing__sec {
     min-height: 100vh;
     width: 100%;
 }
@@ -24,47 +20,47 @@ body {
     width: 100%;
 }
 
-.navbar .nav-left {
+.navbar .nav__left {
     margin-right: auto;
     margin-left: 1rem;
 }
 
-.navbar .nav-left a {
+.navbar .nav__left a {
     color: var(--color-pri);
     font-family: 'Mogra', cursive;
 }
 
-.navbar .nav-right a {
+.navbar .nav__right a {
     margin: 0 1rem;
 }
 
 
 /**  Main landing style here*/
 
-.main-landing {
+.main__landing {
     min-height: 90vh;
 }
 
 
-.main-landing .main-lan-left {
+.main__landing .main__landing-left {
     align-items: flex-start;
     justify-content: flex-start;
 }
 
-.main-lan-left>* {
+.main__landing-left>* {
     margin: 1rem;
 }
 
-.lan-btns>* {
+.landing__btn>* {
     margin-right: 1rem;
     margin-top: 1rem;
 }
 
-.main-lan-right {
+.main__landing-right {
     margin: 0 1rem;
 }
 
-.main-lan-right img {
+.main__landing-right img {
     background-color: var(--text-pri);
     border-radius: 50px 80px 80px 60px;
 
@@ -74,25 +70,25 @@ body {
 
 /* * Installation section style here */
 
-.install-sec {
+.install__sec {
     width: 100%;
 }
 
-.install-sec>* {
+.install__sec>* {
     margin: 1rem 0;
 }
 
 
-.install-sec .ins-sec-left>* {
+.install__sec .install__sec-left>* {
     margin: 1rem;
 }
 
-.ins-sec-left .inst-sub-heading>* {
+.install__sec-left .install-sub-heading>* {
     margin: 1rem 0;
 }
 
 
-.ins-sec-right {
+.install__sec-right {
     width: 60%;
 }
 
@@ -115,7 +111,7 @@ body {
     }
 
 
-    .install-sec {
+    .install__sec {
         flex-direction: column;
     }
 }
@@ -125,21 +121,21 @@ body {
         font-size: 12px;
     }
 
-    .install-sec {
+    .install__sec {
         flex-direction: column;
     }
 }
 
 @media screen and (max-width:630px) {
-    .main-landing {
+    .main__landing {
         flex-direction: column;
     }
 
-    .main-lan-right {
+    .main__landing-right {
         display: none;
     }
 
-    .ins-sec-right {
+    .install__sec-right {
         width: 100%;
     }
 
