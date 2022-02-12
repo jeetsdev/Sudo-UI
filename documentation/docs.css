@@ -1,11 +1,12 @@
 /*! Documentation style here  */
 
 
-.container-docs .navbar {
+.container__doc .navbar {
     box-shadow: 0 0 10px var(--color-off-white);
 }
 
 /* Hamburger button style here */
+
 #btn-hamburger {
     display: none;
     margin-right: 2rem;
@@ -18,9 +19,9 @@
 }
 
 
-/* Main docs style here */
+/* Main documentation style here */
 
-.main-docs {
+.main__doc {
     width: 100%;
     color: var(--text-sec);
     position: relative;
@@ -42,62 +43,62 @@
 }
 
 
-.sidebar-links {
+.sidebar__links {
     align-items: flex-start;
     flex-direction: column;
 }
 
-.sidebar-links .links {
+.sidebar__links .links {
     padding: 1rem;
     width: 100%;
 }
 
-.sidebar-links .links:last-child {
+.sidebar__links .links:last-child {
     margin-bottom: 10vh;
 }
 
-.sidebar-links .links:hover,
-.sidebar-links .links:focus {
+.sidebar__links .links:hover,
+.sidebar__links .links:focus {
     font-weight: 800;
     transform: translateX(5px);
 }
 
-.sidebar-link-active {
+.sidebar__link-active {
     font-weight: 800;
     transform: translateX(5px);
     color: var(--color-pri);
 }
 
-/* Sections style here */
+/* Documentation sections style here */
 
-.docs-sec section {
+.doc__sec section {
     padding: 1rem;
 }
 
-.docs-sec section>* {
+.doc__sec section>* {
     margin: 1rem 0;
 }
 
 /* COmponent style here*/
 
-.comp-intro>*,
-.comp-details>* {
+.component__intro>*,
+.component__details>* {
     margin: 1rem 0;
 }
 
-.comp-examples {
+.component__example {
     border: 2px solid var(--color-off-white);
     border-radius: 5px;
 }
 
-.iframe-sec {
+.iframe__sec {
     width: 100%;
 }
 
 /* ! Media queries here */
 
 @media screen and (max-width:800px) {
-    .main-docs {
+    .main__doc {
         grid-template-columns: 1fr;
     }
 
@@ -112,7 +113,7 @@
         transition: all .3s ease;
     }
 
-    .active-sidebar {
+    .sidear-active {
         position: fixed;
         top: 10vh;
         right: 0;
@@ -140,7 +141,7 @@
     }
 
     /* Matgin top so that doesn't gets under the nav  */
-    .docs-sec {
+    .doc__sec {
         margin-top: 10vh;
     }
 

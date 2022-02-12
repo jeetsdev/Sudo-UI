@@ -1,7 +1,7 @@
 @import url(components.css);
 
 
-#text-utilities-sec .comp-examples {
+#text-utilities-sec .component__example {
     align-items: initial;
     color: var(--color-pure-black);
 }

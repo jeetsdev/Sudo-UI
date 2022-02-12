@@ -1,6 +1,6 @@
 const btnHamburger = document.querySelector("#btn-hamburger");
 const sidebar = document.querySelector(".sidebar");
-const sidebarLinks = document.querySelectorAll(".sidebar-links > *");
+const sidebarLinks = document.querySelectorAll(".sidebar__links > *");
 
 // ! hamburger button event here
 
@@ -12,9 +12,9 @@ btnHamburger.addEventListener('click', () => {
 
 sidebarLinks.forEach(links => {
     links.addEventListener('click', () => {
-        const prevActiveLink = document.querySelector(".sidebar-link-active");
-        prevActiveLink.classList.remove("sidebar-link-active");
-        links.classList.add("sidebar-link-active");
+        const prevActiveLink = document.querySelector(".sidebar__link-active");
+        prevActiveLink.classList.remove("sidebar__link-active");
+        links.classList.add("sidebar__link-active");
         ShowHideSidebar(sidebar);
     })
 })
@@ -22,5 +22,5 @@ sidebarLinks.forEach(links => {
 //! To show and hide sidebar
 
 const ShowHideSidebar = (sidebar) => {
-    sidebar.classList.toggle("active-sidebar");
+    sidebar.classList.toggle("sidear-active");
 }

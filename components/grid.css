@@ -1,6 +1,6 @@
 @import url(components.css);
 
-#grid-sec .comp-examples {
+#grid-sec .component__example {
     justify-content: initial;
 }
 
