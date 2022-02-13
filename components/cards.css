@@ -205,3 +205,19 @@
 .overlay__sec-text.oos p {
     background-color: var(--color-trans-red);
 }
+
+/*! New Arrival card here  */
+
+.card__newarrival {
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+}
+
+.card__newarrival .card__sec-lower {
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.card__newarrival .card__sec-lower>* {
+    margin-left: 3rem;
+}
