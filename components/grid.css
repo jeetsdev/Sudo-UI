@@ -29,16 +29,16 @@
 }
 
 /* Grid 50:50 style */
-.grid.grid__col-50-50 {
+.grid__col-50-50 {
     grid-template-columns: repeat(2, 1fr);
 }
 
 /* Grid 70:30 style */
-.grid.grid__col-70-30 {
+.grid__col-70-30 {
     grid-template-columns: 7fr 3fr;
 }
 
 /* Grid 4 column style */
-.grid.grid__col-4 {
+.grid__col-4 {
     grid-template-columns: repeat(4, 1fr);
 }
