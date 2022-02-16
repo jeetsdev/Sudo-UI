@@ -1,7 +1,8 @@
 @import url(components.css);
 
 .image__res {
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    max-height: 100%;
     object-fit: cover;
 }
