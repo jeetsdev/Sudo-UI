@@ -1,22 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+/*! For documentation purpose */
+#cards-sec .card {
+    border-radius: 4px;
+    max-width: 20rem;
+    max-height: 30.25rem;
+}
+
+#cards-sec .card.card__horizontal,
+#cards-sec .card.card__newarrival {
+    max-width: initial;
+}
+
+/*! Component styles here */
 
 .card {
-    font-family: 'Poppins',
-        sans-serif;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    height: 100%;
     display: grid;
     background-color: var(--color-off-white);
-    transition: transform .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card.grid {
+    gap: 0;
 }
 
 /*! Vertical card style here  */
 
 .card__vertical {
     color: var(--color-pure-black);
-    max-width: 20rem;
-    max-height: 30.25rem;
     grid-template-rows: 3fr 1fr;
 }
-
 
 /** Card upper section */
 
@@ -26,12 +43,13 @@
 }
 
 .card__upper-icon i {
+    position: absolute;
     cursor: pointer;
     font-size: 1.2em;
     width: 2.5rem;
     height: 2.5rem;
     background-color: var(--color-pure-white);
-    padding: 1rem;
+    top: 0;
     flex-wrap: nowrap;
 }
 
@@ -39,9 +57,17 @@
     color: var(--color-pure-red);
 }
 
+.card__upper-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 13rem;
+    transition: all 0.6s ease-in-out;
+}
+
 .card__upper-image img {
-    height: 17rem;
-    width: 16rem;
+    object-fit: contain;
+    margin: 1rem;
 }
 
 /* * Card lower section */
@@ -62,7 +88,6 @@
     font-weight: 700;
     color: var(--color-pure-black);
 }
-
 
 /* Previous price style */
 
@@ -91,22 +116,16 @@
     width: 100%;
 }
 
-
 /*! Badge card style here */
 
-.card__badge {
-    position: relative;
-}
-
 .card__badge-icon {
-    top: .5rem;
-    left: .5rem;
+    top: 0.5rem;
+    left: 0.5rem;
     padding: 4px;
     color: var(--color-pure-white);
     background-color: var(--color-pure-red);
     position: absolute;
 }
-
 
 /*! Card horizontal style here */
 
@@ -147,7 +166,6 @@
     box-shadow: -1px 0px 10px var(--text-sec);
 }
 
-
 /*! Text only card here  */
 
 .card__textonly {
@@ -162,15 +180,15 @@
 .dismiss__btn {
     cursor: pointer;
     font-size: 1.2rem;
-    right: .5rem;
-    top: .5rem;
+    right: 0.5rem;
+    top: 0.5rem;
     position: absolute;
-    transition: all .3s linear;
+    transition: all 0.3s linear;
 }
 
 .dismiss__btn:hover {
     transform: scale(1.1);
-    transition: all .3s linear;
+    transition: all 0.3s linear;
 }
 
 /*! Text overlay card here  */
@@ -185,7 +203,7 @@
     z-index: 1;
     left: 0;
     right: 0;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     transform-origin: left;
 }
 
@@ -203,6 +221,7 @@
 }
 
 .overlay__sec-text.oos p {
+    width: 100%;
     background-color: var(--color-trans-red);
 }
 
@@ -220,4 +239,74 @@
 
 .card__newarrival .card__sec-lower>* {
     margin-left: 3rem;
+}
+
+/*! E-comm producr card style here */
+
+.card__sec-upper {
+    position: relative;
+}
+
+/** Card overlay section style here  */
+.card__upper-overlay {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(100%);
+    transition: all 0.5s ease-in-out;
+    z-index: -10;
+}
+
+.card__e-commerce:hover .card__upper-image {
+    transform: scale(1.1);
+}
+
+.card__e-commerce:hover .card__upper-overlay {
+    z-index: 10;
+    transform: translateY(0%);
+}
+
+/** Cart icon style here  */
+.shopping__cart-icon {
+    --icon-width: 1.5rem;
+    --icon-height: 1.5rem;
+    cursor: pointer;
+    color: var(--color-pri);
+    outline: 2px solid var(--color-pri);
+    width: var(--icon-width);
+    height: var(--icon-height);
+    margin: 1rem 0.5rem;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.shopping__cart-icon::before {
+    content: "";
+    outline: 2px solid var(--color-pri);
+    position: absolute;
+    overflow: hidden;
+    width: calc(var(--icon-width) - 0.6rem);
+    height: calc(var(--icon-height) - 1rem);
+    bottom: calc(var(--icon-width) - -2px);
+    border-radius: 50% 50% 0 0;
+    pointer-events: none;
+    transition: all 0.1s ease-in-out;
+}
+
+.shopping__cart-icon:hover {
+    color: var(--color-pure-white);
+    background-color: var(--color-pri);
+}
+
+.shopping__cart-icon:hover::before {
+    height: calc(var(--icon-height) - 0.9rem);
+}
+
+.card__upper-overlay .btns {
+    width: 100%;
+}
+
+.card__e-commerce .card__sec-lower {
+    z-index: 99;
+    padding: 1rem;
 }
