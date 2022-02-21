@@ -17,6 +17,8 @@ Add the following line of code in the head tag of your HTML document.
 
 ## Demo
 
+![Demo](assets/demo.gif)
+
 ### What are the components provided by Lagom UI?
 
 1. [Avatar](#avatar)
