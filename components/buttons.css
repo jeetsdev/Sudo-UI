@@ -12,8 +12,9 @@
     cursor: pointer;
     padding: .8rem 1.2rem;
     border: none;
+    text-align: center;
     color: var(--color-white);
-    font-weight: 550;
+    font-weight: 650;
     transition: all .3s ease;
     text-decoration: none;
 }
