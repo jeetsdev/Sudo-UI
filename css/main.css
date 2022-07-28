@@ -1,115 +1,109 @@
 /*! Importing area  */
 
-@import url('https://fonts.googleapis.com/css2?family=Mogra&family=Roboto&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Mogra&family=Roboto&display=swap");
 
 :root {
-    --color-pri: hsl(258, 90%, 66%);
-    --color-sec: hsl(254, 62%, 8%);
-    --text-pri: hsl(257, 40%, 66%);
-    --text-sec: hsl(218, 17%, 18%);
-    --color-white: hsl(220, 14%, 96%);
-    --color-off-white: hsl(214, 4%, 69%);
-    --color-green: hsl(120, 100%, 25%);
-    --color-off-green: hsl(151, 41%, 79%);
-    --color-yellow: hsl(60, 100%, 25%);
-    --color-off-yellow: hsl(60, 41%, 79%);
-    --color-red: hsl(0, 100%, 25%);
-    --color-off-red: hsl(0, 41%, 79%);
-    --color-grey: hsl(0, 0%, 50%);
-    --color-pure-white: hsl(0, 0%, 100%);
-    --color-pure-black: hsl(0, 0%, 0%);
-    --color-pure-red: hsl(0, 100%, 50%);
-    --color-trans-red: hsla(0, 100%, 50%, 0.3);
-    --color-trans-grey: hsla(0, 0%, 42%, 0.612);
-    --color-pure-yellow: hsl(60, 100%, 50%);
+	--color-pri: hsl(258, 90%, 66%);
+	--color-sec: hsl(254, 62%, 8%);
+	--text-pri: hsl(257, 40%, 66%);
+	--text-sec: hsl(218, 17%, 18%);
+	--color-white: hsl(220, 14%, 96%);
+	--color-off-white: hsl(214, 4%, 69%);
+	--color-green: hsl(120, 100%, 25%);
+	--color-off-green: hsl(151, 41%, 79%);
+	--color-yellow: hsl(60, 100%, 25%);
+	--color-off-yellow: hsl(60, 41%, 79%);
+	--color-red: hsl(0, 100%, 25%);
+	--color-off-red: hsl(0, 41%, 79%);
+	--color-grey: hsl(0, 0%, 50%);
+	--color-pure-white: hsl(0, 0%, 100%);
+	--color-pure-black: hsl(0, 0%, 0%);
+	--color-pure-red: hsl(0, 100%, 50%);
+	--color-trans-red: hsla(0, 100%, 50%, 0.3);
+	--color-trans-grey: hsla(0, 0%, 42%, 0.612);
+	--color-pure-yellow: hsl(60, 100%, 50%);
 }
 
-
 body {
-    background-color: var(--color-white);
-    color: var(--color-sec);
-    font-family: 'Roboto',
-        sans-serif;
-    ;
+	background-color: var(--color-white);
+	color: var(--color-sec);
+	font-family: "Roboto", sans-serif;
 }
 
 /*! Buttons style here  */
 
 .button {
-    cursor: pointer;
-    display: inline-block;
-    min-width: 8.5rem;
-    outline: none;
-    padding: .8rem .5rem;
-    text-align: center;
-    text-decoration: none;
-    transition: all .3s ease;
+	cursor: pointer;
+	display: inline-block;
+	min-width: 8.5rem;
+	outline: none;
+	padding: 0.8rem 0.5rem;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.3s ease;
+	transition-property: background-color, color, border;
 }
 
 .btn__pri {
-    background-color: var(--color-pri);
-    border: 1px solid var(--color-pri);
-    color: var(--color-white);
+	background-color: var(--color-pri);
+	border: 1px solid var(--color-pri);
+	color: var(--color-white);
 }
 
 .btn__pri:hover {
-    background-color: var(--text-pri);
-    color: var(--color-sec);
-
+	background-color: var(--text-pri);
+	color: var(--color-sec);
 }
 
 .btn__sec {
-    border: 1px solid var(--color-pri);
-    background-color: var(--color-white);
-    color: var(--color-pri);
+	border: 1px solid var(--color-pri);
+	background-color: var(--color-white);
+	color: var(--color-pri);
 }
 
 .btn__sec:hover {
-    background-color: var(--text-pri);
-    border-color: var(--text-pri);
-    color: var(--color-sec);
+	background-color: var(--text-pri);
+	border-color: var(--text-pri);
+	color: var(--color-sec);
 }
 
 /* ! Achor tag style here */
 
 .links {
-    color: var(--color-sec);
-    text-decoration: none;
-    transition: all .3s linear;
+	color: var(--color-sec);
+	text-decoration: none;
+	transition: color 0.3s linear;
 }
-
 
 .links:hover {
-    color: var(--color-pri);
+	color: var(--color-pri);
 }
-
 
 /*! Images style here  */
 
 .images {
-    block-size: auto;
-    max-inline-size: 100%;
-    width: 100%;
-    height: auto;
+	block-size: auto;
+	max-inline-size: 100%;
+	width: 100%;
+	height: auto;
 }
 
 /*! Display styles here */
 
 .display__none {
-    display: none;
+	display: none;
 }
 
 .center__flex {
-    align-items: center;
-    display: flex;
-    justify-content: center;
+	align-items: center;
+	display: flex;
+	justify-content: center;
 }
 
 .flex__dir-col {
-    flex-direction: column;
+	flex-direction: column;
 }
 
 .flex-wrap {
-    flex-wrap: wrap;
+	flex-wrap: wrap;
 }

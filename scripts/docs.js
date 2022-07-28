@@ -1,11 +1,18 @@
 const btnHamburger = document.querySelector("#btn-hamburger");
 const sidebar = document.querySelector(".sidebar");
 const sidebarLinks = document.querySelectorAll(".sidebar__links > *");
+const floatBtn = document.querySelector("#btn__float-up");
 
 // ! hamburger button event here
 
 btnHamburger.addEventListener('click', () => {
     ShowHideSidebar(sidebar);
+})
+
+//! Float btn here
+
+floatBtn.addEventListener("click", () => {
+    window.scrollTo(0, 0);   
 })
 
 // ! sidelinks button event here

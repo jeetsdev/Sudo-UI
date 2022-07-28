@@ -1,148 +1,135 @@
 /*! Main Container section style here */
 
 body {
-    width: 100%;
+	width: 100%;
 }
 
 /*! Landing section style here  */
 
 .coantainer__main .landing__sec {
-    min-height: 100vh;
-    width: 100%;
+	min-height: 100vh;
+	width: 100%;
 }
-
 
 /** Navbar style here */
 
 .navbar {
-    min-height: 60px;
-    height: 10vh;
-    width: 100%;
+	min-height: 60px;
+	height: 10vh;
+	width: 100%;
 }
 
 .navbar .nav__left {
-    margin-right: auto;
-    margin-left: 1rem;
+	margin-right: auto;
+	margin-left: 1rem;
 }
 
 .navbar .nav__left a {
-    color: var(--color-pri);
-    font-family: 'Mogra', cursive;
+	color: var(--color-pri);
+	font-family: "Mogra", cursive;
 }
 
 .navbar .nav__right a {
-    margin: 0 1rem;
+	margin: 0 1rem;
 }
-
 
 /**  Main landing style here*/
 
 .main__landing {
-    min-height: 90vh;
+	min-height: 90vh;
 }
-
 
 .main__landing .main__landing-left {
-    align-items: flex-start;
-    justify-content: flex-start;
+	align-items: flex-start;
+	justify-content: flex-start;
 }
 
-.main__landing-left>* {
-    margin: 1rem;
+.main__landing-left > * {
+	margin: 1rem;
 }
 
-.landing__btn>* {
-    margin-right: 1rem;
-    margin-top: 1rem;
+.landing__btn > * {
+	margin-right: 1rem;
+	margin-top: 1rem;
 }
 
 .main__landing-right {
-    margin: 0 1rem;
+	margin: 0 1rem;
 }
 
 .main__landing-right img {
-    background-color: var(--text-pri);
-    border-radius: 50px 80px 80px 60px;
-
+	background-color: var(--text-pri);
+	border-radius: 50px 80px 80px 60px;
 }
-
-
 
 /* * Installation section style here */
 
 .install__sec {
-    width: 100%;
+	width: 100%;
 }
 
-.install__sec>* {
-    margin: 1rem 0;
+.install__sec > * {
+	margin: 1rem 0;
 }
 
-
-.install__sec .install__sec-left>* {
-    margin: 1rem;
+.install__sec .install__sec-left > * {
+	margin: 1rem;
 }
 
-.install__sec-left .install-sub-heading>* {
-    margin: 1rem 0;
+.install__sec-left .install-sub-heading > * {
+	margin: 1rem 0;
 }
-
 
 .install__sec-right {
-    width: 60%;
+	width: 60%;
 }
 
 .iframes {
-    margin: 1rem;
-    background-color: var(--text-pri);
-    border-radius: 50px 80px 80px 60px;
-    border: transparent;
-    height: 200px;
-    width: 100%;
+	margin: 1rem;
+	background-color: var(--text-pri);
+	border-radius: 50px 80px 80px 60px;
+	border: transparent;
+	height: 200px;
+	width: 100%;
 }
-
 
 /* ! Media queries here */
 
+@media screen and (max-width: 876px) {
+	html {
+		font-size: 14px;
+	}
 
-@media screen and (max-width:876px) {
-    html {
-        font-size: 14px
-    }
-
-
-    .install__sec {
-        flex-direction: column;
-    }
+	.install__sec {
+		flex-direction: column;
+	}
 }
 
-@media screen and (max-width:700px) {
-    html {
-        font-size: 12px;
-    }
+@media screen and (max-width: 700px) {
+	html {
+		font-size: 12px;
+	}
 
-    .install__sec {
-        flex-direction: column;
-    }
+	.install__sec {
+		flex-direction: column;
+	}
 }
 
-@media screen and (max-width:630px) {
-    .main__landing {
-        flex-direction: column;
-    }
+@media screen and (max-width: 630px) {
+	.main__landing {
+		flex-direction: column;
+	}
 
-    .main__landing-right {
-        display: none;
-    }
+	.main__landing-right {
+		display: none;
+	}
 
-    .install__sec-right {
-        width: 100%;
-    }
+	.install__sec-right {
+		width: 100%;
+	}
 
-
-    .iframes {
-        background-color: var(--color-white);
-        margin-bottom: 1rem;
-    }
-
+	.iframes {
+		background-color: var(--color-white);
+		margin-bottom: 1rem;
+	}
 }

@@ -1,148 +1,153 @@
 /*! Documentation style here  */
 
-
 .container__doc .navbar {
-    box-shadow: 0 0 10px var(--color-off-white);
+	box-shadow: 0 0 10px var(--color-off-white);
 }
 
 /* Hamburger button style here */
 
 #btn-hamburger {
-    display: none;
-    margin-right: 2rem;
-    font-size: 1.3rem;
-    transition: all .3s ease-in-out;
+	display: none;
+	margin-right: 2rem;
+	font-size: 1.3rem;
+	transition: transform 0.3s ease-in-out;
 }
 
 #btn-hamburger:active {
-    transform: scale(1.1);
+	transform: scale(1.1);
 }
-
 
 /* Main documentation style here */
 
 .main__doc {
-    width: 100%;
-    color: var(--text-sec);
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 4fr;
+	width: 100%;
+	color: var(--text-sec);
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr 4fr;
 }
 
 /** Sidebar style here */
 
 .sidebar {
-    box-shadow: 0 5px 10px var(--color-off-white);
-    height: 100vh;
-    left: 0;
-    overflow-y: auto;
-    padding: 1rem;
-    position: sticky;
-    top: 0;
-    transition: all .3s ease-in-out;
+	box-shadow: 0 5px 10px var(--color-off-white);
+	height: 100vh;
+	left: 0;
+	overflow-y: auto;
+	padding: 1rem;
+	position: sticky;
+	top: 0;
+	transition: all 0.3s ease-in-out;
+	transition-property: font-weight, transform, color;
 }
 
-
 .sidebar__links {
-    align-items: flex-start;
-    flex-direction: column;
+	align-items: flex-start;
+	flex-direction: column;
 }
 
 .sidebar__links .links {
-    padding: 1rem;
-    width: 100%;
+	padding: 1rem;
+	width: 100%;
 }
 
 .sidebar__links .links:last-child {
-    margin-bottom: 10vh;
+	margin-bottom: 10vh;
 }
 
 .sidebar__links .links:hover,
 .sidebar__links .links:focus {
-    font-weight: 800;
-    transform: translateX(5px);
+	font-weight: 800;
+	transform: translateX(5px);
 }
 
 .sidebar__link-active {
-    font-weight: 800;
-    transform: translateX(5px);
-    color: var(--color-pri);
+	font-weight: 800;
+	transform: translateX(5px);
+	color: var(--color-pri);
 }
 
 /* Documentation sections style here */
 
 .doc__sec section {
-    padding: 1rem;
+	padding: 1rem;
 }
 
-.doc__sec section>* {
-    margin: 1rem 0;
+.doc__sec section > * {
+	margin: 1rem 0;
 }
 
 /* COmponent style here*/
 
-.component__intro>*,
-.component__details>* {
-    margin: 1rem 0;
+.component__intro > *,
+.component__details > * {
+	margin: 1rem 0;
 }
 
 .component__example {
-    border: 2px solid var(--color-off-white);
-    border-radius: 5px;
+	border: 2px solid var(--color-off-white);
+	border-radius: 5px;
 }
 
 .iframe__sec {
-    width: 100%;
+	width: 100%;
 }
 
 /* ! Media queries here */
 
-@media screen and (max-width:800px) {
-    .main__doc {
-        grid-template-columns: 1fr;
-    }
+@media screen and (max-width: 800px) {
+	.main__doc {
+		grid-template-columns: 1fr;
+	}
 
-    .sidebar {
-        opacity: 0;
-        height: 0;
-        overflow: hidden;
-        grid-row-start: 2;
-        /* So that sidebar gets at the end of the page and no ui changes on clicks */
-        background-color: var(--color-off-white);
-        z-index: 1;
-        transition: all .3s ease;
-    }
+	.sidebar {
+		opacity: 0;
+		height: 0;
+		overflow: hidden;
+		grid-row-start: 2;
+		/* So that sidebar gets at the end of the page and no ui changes on clicks */
+		background-color: var(--color-off-white);
+		z-index: 999;
+		transition: all 0.3s ease;
+		transition: position, height, overflow, top, right, opacity,display;
+	}
 
-    .sidear-active {
-        position: fixed;
-        top: 10vh;
-        right: 0;
-        height: 100%;
-        opacity: 1;
-        overflow-y: auto;
-    }
+	.sidear-active {
+		position: fixed;
+		top: 10vh;
+		right: 0;
+		height: 100%;
+		opacity: 1;
+		overflow-y: auto;
+	}
 
+	.navbar {
+		min-width: 100vw;
+		position: fixed;
+		top: 0;
+		background-color: var(--color-white);
+		z-index: 9;
+	}
 
-    .navbar {
-        min-width: 100vw;
-        position: fixed;
-        top: 0;
-        background-color: var(--color-white);
-        z-index: 2;
-    }
+	#btn-hamburger {
+		display: block;
+	}
 
-    #btn-hamburger {
-        display: block;
-    }
+	#btn__float-up {
+	width: 3rem;
+	height: 3rem;
+	font-size: 1.5rem;
+	/* background-color: red; */
+	z-index: 99;
+}
 
-    .nav__right a:nth-child(2),
-    .nav__right a:nth-child(3) {
-        display: none;
-    }
+	.nav__right a:nth-child(2),
+	.nav__right a:nth-child(3) {
+		display: none;
+	}
 
-    /* Matgin top so that doesn't gets under the nav  */
-    .doc__sec {
-        margin-top: 10vh;
-    }
-
+	/* Matgin top so that doesn't gets under the nav  */
+	.doc__sec {
+		margin-top: 10vh;
+	}
 }
